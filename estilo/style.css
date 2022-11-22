@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/**Boot CSS**/
+
+html,
+body {
+    height: 100%;
+}
+
+.center {
+    max-width: 1280px;
+    padding: 0 2%;
+    margin: 0 auto;
+}
+
+.w33 {
+    width: 33.3%;
+    padding: 0 10px;
+}
+
+.w50 {
+    padding: 0 10%;
+    width: 50%;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.clear {
+    clear: both;
+}
