@@ -21,7 +21,8 @@
     <header>
         <div class="center">
             <div class="logo left">
-                <img src="imagens/logo1.png">
+                <img id="logo1" src="imagens/logo1.png">
+                <h1>Bem-vindo!</h1>
             </div>
             <nav class="desktop right">
                 <ul>
@@ -51,35 +52,72 @@
         </div>
         <!--center-->
     </header>
-    <session class="introducao">
+    <section class="introducao">
         <div class="center">
-            <div class="fotoPerfil w50 left">
-                <img src="imagens/perfil.jpg">
+            <div class="fotoPerfil left">
+                <img class="right" src="imagens/perfil.jpg">
             </div>
-            <div class="textoPerfil w50 right">
+            <div class="textoPerfil right">
                 <h1>Olá, me chamo Ariel</h1>
                 <h3>Junior Full Stack</br>Html5, CSS3, Bootstrap5, Javascript</br>C, C# e PHP</h3>
-            </div>
+            </div><!--textoPerfil-->
             <div class="clear"></div>
         </div>
-    </session>
+    </section>
     <!--introducao-->
-    <session class="sobre">
+    <section class="sobre">
         <div class="center">
             <h1>Sobre</h1>
             <h2 class="left"><img src="imagens/perfil2.jpg"></h2>
             <p class="right">Tenho 28 anos e comecei como desenvolvedor Full Stack com Html e Css, e continuo me desenvolvendo em linguagens puras. Aplicando cada vez mais os frameworks e demais conhecimentos. Em busca de meu primeiro emprego na área.</p>
         </div>
         <!--center-->
-    </session>
+    </section>
     <!--sobre-->
-    <session class="experiencias">
+    <section class="experiencias">
         <div class="center">
             <h1>Experiências</h1>
-        </div>
-    </session>
+            <div class="w33 left box-experiencias">
+                <h1>Animated_Login</h1>
+                <video width="320" height="240" autoplay>
+                    <source src="movie.mp4" type="video/mp4">
+                </video>
+            </div><!--w33 left box-experiencias-->
+            <div class="w33 left box-experiencias">
+                <h1>Social Icon Effect</h1>
+                <video width="320" height="240" autoplay>
+                    <source src="movie.mp4" type="video/mp4">
+                </video>
+            </div><!--w33 left box-experiencias-->
+            <div class="w33 left box-experiencias">
+                <h1>Animated_Navbar</h1>
+                <video width="320" height="240" autoplay>
+                    <source src="movie.mp4" type="video/mp4">
+                </video>
+            </div><!--w33 left box-experiencias-->
+            <div class="w33 left box-experiencias">
+                <h1>Social Media - Tuitter</h1>
+                <video width="320" height="240" autoplay>
+                    <source src="movie.mp4" type="video/mp4">
+                </video>
+            </div><!--w33 left box-experiencias-->
+            <div class="w33 left box-experiencias">
+                <h1>Universe Travel</h1>
+                <video width="320" height="240" autoplay>
+                    <source src="movie.mp4" type="video/mp4">
+                </video>
+            </div><!--w33 left box-experiencias-->
+            <div class="w33 left box-experiencias">
+                <h1>Portifólio - Projeto</h1>
+                <video width="320" height="240" autoplay>
+                    <source src="movie.mp4" type="video/mp4">
+                </video>
+            </div><!--w33 left box-experiencias-->
+            <div class="clear"></div>
+        </div><!--center-->
+    </section>
     <!--experiencias-->
-    <session class="especialidades">
+    <section class="especialidades">
         <div class="center">
             <h1>Especialidades</h1>
             <div class="w33 left box-especialidades">
@@ -131,11 +169,12 @@
                 <input type="range" id="nivel" name="volume" min="1" max="5">
             </div>
             <!--w33 left box-especialidades-->
+            <div class="clear"></div>
         </div>
         <!--center-->
-    </session>
+    </section>
     <!--especialidades-->
-    <session class="contato">
+    <section class="contato">
         <div class="center">
             <div class="dados">
                 <h1>Contato</h1>
@@ -150,7 +189,7 @@
             <!--linkedin-->
         </div>
         <!--center-->
-    </session>
+    </section>
     <!--contato-->
     <script src="<?php echo INCLUDE_PATH; ?>JS/jquery.js"></script>
     <script src="<?php echo INCLUDE_PATH; ?>JS/scripts.js"></script>
