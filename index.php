@@ -4,9 +4,9 @@
 <head>
     <title>Portifólio</title>
     <link rel="stylesheet" href="<?php echo INCLUDE_PATH; ?>estilo/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
     <link href="<?php echo INCLUDE_PATH; ?>estilo/style.css" rel="stylesheet" />
     <meta http-equiv="pragma" content="no-cache" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,15 +22,14 @@
         <div class="center">
             <div class="logo left">
                 <img id="logo1" src="imagens/logo1.png">
-                <h1>Bem-vindo!</h1>
             </div>
             <nav class="desktop right">
-                <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Sobre</a></li>
-                    <li><a href="">Especialidades</a></li>
-                    <li><a href="">Experiências</a></li>
-                    <li><a href="">Contato</a></li>
+                    <a href="#">Home</a>
+                    <a href="#">Sobre</a>
+                    <a href="#">Especialidades</a>
+                    <a href="#">Experiências</a>
+                    <a href="#">Contato</a>
+                    <div class="animation start-home"></div>
                 </ul>
             </nav>
             <!--desktop-->
@@ -55,11 +54,13 @@
     <section class="introducao">
         <div class="center">
             <div class="fotoPerfil left">
-                <img class="right" src="imagens/perfil.jpg">
+                <img class="right" src="imagens/perfil.png">
             </div>
             <div class="textoPerfil right">
-                <h1>Olá, me chamo Ariel</h1>
-                <h3>Junior Full Stack</br>Html5, CSS3, Bootstrap5, Javascript</br>C, C# e PHP</h3>
+                <h1>Olá, sou o Ariel</h1>
+                <h2>Front-End Júnior</h2>
+                <h3>HTML, CSS, Bootstrap, Javascript</h3> 
+                <h4>C, C# e PHP</h4>
             </div><!--textoPerfil-->
             <div class="clear"></div>
         </div>
@@ -68,8 +69,13 @@
     <section class="sobre">
         <div class="center">
             <h1>Sobre</h1>
-            <h2 class="left"><img src="imagens/perfil2.jpg"></h2>
-            <p class="right">Tenho 28 anos e comecei como desenvolvedor Full Stack com Html e Css, e continuo me desenvolvendo em linguagens puras. Aplicando cada vez mais os frameworks e demais conhecimentos. Em busca de meu primeiro emprego na área.</p>
+            <div class="w50 left">
+                <img src="imagens/perfil2.jpg">
+            </div>
+            <div class="w50 right">
+                <p>Tenho 28 anos e comecei como desenvolvedor Full Stack com Html, CSS e Javascript, e continuo me desenvolvendo em linguagens puras. Aplicando cada vez mais os frameworks e demais conhecimentos. Em busca de meu primeiro emprego na área.</p>
+            </div>
+            <div class="clear"></div>
         </div>
         <!--center-->
     </section>
