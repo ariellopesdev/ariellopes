@@ -2,65 +2,62 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Prompt', sans-serif;
 }
 
 /**Boot CSS**/
-
 html,
 body {
     height: 100%;
-    background: linear-gradient(180deg, rgba(2,0,36,1) 25%, rgba(59,209,202,1) 60%, rgba(255,255,255,1) 100%);
+    background: black;
+    color: white;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-/*body{
+body{
     overflow-x: hidden;
-}*/
+}
 .center {
     max-width: 1280px;
     padding: 0 2%;
     margin: 0 auto;
 }
-
 .w33 {
     width: 33.3%;
     padding: 0 10px;
 }
-
 .w50 {
     padding: 0 10%;
     width: 50%;
 }
-
 .left {
     float: left;
 }
-
 .right {
     float: right;
 }
-
 .clear {
     clear: both;
 }
 /**Estilização**/
-
+header{
+    height: 80px;
+}
 header .logo{
     width: 35%;
     height: 100px;
 }
 header #logo1{
     position: relative;
-    width: 150px;
-    height: 80px;
+    width: 97px;
+    height: 60px;
     display: flex;
     align-items: center;
     margin: 10px auto;
 }
 nav.desktop{
-    margin-top: 25px;
+    margin-top: 15px;
     position: relative;
     border-radius: 8px;
     font-size: 0;
@@ -78,7 +75,6 @@ nav.desktop a{
     text-align: center;
     display: inline-block;
 }
-
 nav.desktop .animation{
     position: absolute;
     height: 100%;
@@ -135,8 +131,18 @@ section.introducao{
     height: 100%;
 }
 .fotoPerfil img{
-    width: 450px;
+    width: 300px;
     height: 100%;
+    filter: drop-shadow(-50px 15px 60px rgba(59,209,202,1));
+}
+.overlay{
+    right: 0; problema
+    position: relative;
+    width: 300px;
+    height: 450px;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.25);
+    
 }
 .textoPerfil{
     width: 52%;
@@ -144,7 +150,6 @@ section.introducao{
     display: block;
 }
 .textoPerfil h1, h2, h3, h4{
-    font-family:'Roboto', sans-serif;
     margin-top: 140px;
     margin-left: 60px;
     white-space: nowrap;
@@ -182,7 +187,7 @@ section.introducao{
 section.sobre{
     margin-top: 40px;
     height: 400px;
-    font-family:'Roboto', sans-serif;
+    
 }
 .sobre .center{
     height: 100%;
@@ -239,7 +244,6 @@ section.sobre{
         width: 100%;
     }
 }
-
 @keyframes blink {
     50%{    
         border-color: transparent;
@@ -249,48 +253,44 @@ section.sobre{
     nav.desktop {
         display: none;
     }
-
     nav.mobile {
         display: block;
     }
-
     .botao-menu-mobile {
         width:80px;
-        height: 100px;
+        height: 80px;
         display: flex;
         justify-content: center;
         align-items: center;
         font-size: 24px;
         cursor: pointer;
-        color: white;
+        color: rgba(59,209,202,1);
     }
     nav.mobile ul {
-        top: 100px;
+        top: 80px;
         z-index: 3;
         position: absolute;
-        left: 0;
-        width: 100%;
+        right: 0;
+        width: 40%;
         display: none;
         text-align: center;
     }
-
     nav.mobile li {
         font-weight: 300;
         width: 100%;
         display: block;
-        background-color: white;
-        border-bottom: 1px solid #ccc;
         font-size: 17px;
         line-height: 45px;
     }
-
     nav.mobile li a {
         display: block;
-        color: #444;
+        color: white;
         text-decoration: none;
     }
     nav.mobile li:hover {
-        background: linear-gradient(90deg, rgb(28, 20, 190) 20%, rgba(59,209,202,1) 100%);
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+        background: rgba(59,209,202,1);
     }
     nav.mobile li a:hover{
         font-weight: bold;
@@ -298,14 +298,16 @@ section.sobre{
         width: 100%;
         height: 100%;
     }
+    header{
+        height:80px;
+    }
     header .logo{
         width: 80%;
-        height: 100px;
+        height: 80px;
     }
     header #logo1{
-        margin: 10px;
+        margin: 10px auto;
     }
-    
     .fotoPerfil{
         margin-top: 10px;
         width: 100%;

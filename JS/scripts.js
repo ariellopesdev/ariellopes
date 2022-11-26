@@ -43,7 +43,7 @@ $(function () {
     function carregarDinamico() {
         $('[realtime]').click(function () {
             var pagina = $(this).attr('realtime');
-            $('.container-principal').load('/my-website/pages/' + pagina + '.php');
+            $('.container-principal').load('/Portifolio/pages/' + pagina + '.php');
             return false;
         })
     }
