@@ -33,9 +33,6 @@
     ?>
     <header>
         <div class="center">
-            <div class="logo left">
-                <img id="logo1" src="<?php echo INCLUDE_PATH; ?>imagens/logo.png">
-            </div>
             <nav class="desktop right">
                 <a href="<?php echo INCLUDE_PATH; ?>">Home</a>
                 <a realtime="sobre" href="<?php echo INCLUDE_PATH; ?>sobre">Sobre</a>
@@ -87,6 +84,12 @@
     <!--container-principal-->
     <footer <?php if (isset($pagina404) && $pagina404 == true) echo 'class="fixed"' ?>>
         <div class="center">
+            <ul>
+                <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-envelope"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
+            </ul>           
             <p>Todos os direitos reservados</p>
         </div>
         <!--center-->

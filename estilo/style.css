@@ -4,19 +4,27 @@
     box-sizing: border-box;
     font-family: 'Prompt', sans-serif;
 }
-
+*:before, *:after{
+    box-sizing: border-box;
+}
 /**Boot CSS**/
 html,
 body {
-    height: 100%;
-    background: black;
+    position: relative;
+    z-index: -1;
+    background-image: url("../imagens/cool-background.png");
     color: white;
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat:no-repeat;
     background-size: cover;
 }
+html{
+    -webkit-font-smoothing: antialiased;
+}
 body{
+    height: 700px;
     overflow-x: hidden;
+    /*overflow-y: hidden;*/
 }
 .center {
     max-width: 1280px;
@@ -43,18 +51,6 @@ body{
 /**Estilização**/
 header{
     height: 80px;
-}
-header .logo{
-    width: 35%;
-    height: 100px;
-}
-header #logo1{
-    position: relative;
-    width: 97px;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    margin: 10px auto;
 }
 nav.desktop{
     margin-top: 15px;
@@ -126,28 +122,61 @@ section.introducao{
     margin-top: 30px;
     height: 450px;
 }
-.fotoPerfil{
-    width: 48%;
+.logo{
+    width: 50%;
     height: 100%;
 }
-.fotoPerfil img{
-    width: 300px;
-    height: 100%;
-    filter: drop-shadow(-50px 15px 60px rgba(59,209,202,1));
-}
-.overlay{
-    right: 0; problema
-    position: relative;
-    width: 300px;
+.agrupar{
     height: 450px;
+    position: relative;
+    right: 100px;
+}
+.loader{
+    --path: #ff8c00;
+    --duration: 6s;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.loader h1{
+    position: relative;
+    top: 182px;
+    font-size: 60px;
+    z-index: 2;
+    width: 210px;
+    color: rgba(59,209,202,1);
+}
+.loader p{
+    font-size: 260px;
+    transform: rotate(-22deg);
+    position: relative;
+    top: -70px;
+    left: 170px;
+    width: 200px;
+    color: rgba(59,209,202,1);
+}
+.loader svg{
+    position: relative;
+    top: -430px;
+    left: 92px;
     z-index: 1;
-    background-color: rgba(0, 0, 0, 0.25);
-    
+    height: 350px;
+}
+.loader svg circle{
+    fill: none;
+    stroke: var(--path);
+    stroke-width: 1px;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+}
+.loader svg circle{
+    stroke-dasharray: 150 50 150 50;
+    stroke-dashoffset: 75;
+    animation: pathCircle var(--duration) cubic-bezier(0.785,0.135,0.15,0.86) infinite;
 }
 .textoPerfil{
-    width: 52%;
+    width: 50%;
     height: 100%;
-    display: block;
 }
 .textoPerfil h1, h2, h3, h4{
     margin-top: 140px;
@@ -211,7 +240,77 @@ section.sobre{
     display: flex;
     align-items: center;
 }
-
+footer{
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(46, 46, 46);
+    height: 120px;
+}
+footer ul{
+    position: relative;
+    display: flex;
+}
+footer ul li{
+    position: relative;
+    list-style: none;
+    margin: 0 20px;
+    cursor: pointer;
+}
+footer ul li a{
+    text-decoration: none;
+}
+footer ul li a .fa-brands{
+    font-family: "FontAwesome";
+    font-style: normal;
+    font-size: 3em;
+    color: #222;
+}
+footer ul li a .fa-solid{
+    font-family: "FontAwesome";
+    font-style: normal;
+    font-size: 3em;
+    color: #222;
+}
+footer ul li a::before{
+    font-family: "FontAwesome";
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 3em;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+}
+footer ul li:nth-child(1) a::before{
+    content: "\f0e1";
+    color: #0e76a8;
+    border-bottom: 4px solid #0e76a8;
+}
+footer ul li:nth-child(2) a::before{
+    content: "\f09b";
+    color: #656565;
+    border-bottom: 4px solid #656565;
+}
+footer ul li:nth-child(3) a::before{
+    content: "\f0e0";
+    color: #0047ab ;
+    border-bottom: 4px solid #0047ab ;
+}
+footer ul li:nth-child(4) a::before{
+    content: "\f232";
+    color: #25d366;
+    border-bottom: 4px solid #25d366;
+}
+footer ul li:hover a::before{
+    height: 100%;
+}
+footer p{
+    margin-top: 15px;
+    text-align: center;
+    font: 15px;
+}
 @keyframes type {
     from {
         width: 0
@@ -249,7 +348,29 @@ section.sobre{
         border-color: transparent;
     }
 }
-@media screen and (max-width: 1076px) {
+@keyframes pathCircle{
+    25%{
+        stroke-dashoffset: 125;
+    }
+    50%{
+        stroke-dashoffset: 175;
+    }
+    75%{
+        stroke-dashoffset: 225;
+    }
+    100%{
+        stroke-dashoffset: 275;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .agrupar{
+        right: 60px;
+    }
+}
+@media screen and (max-width: 950px) {
+    
+}
+@media screen and (max-width: 500px) {
     nav.desktop {
         display: none;
     }
@@ -290,7 +411,7 @@ section.sobre{
     nav.mobile li:hover {
         border-top-left-radius: 15px;
         border-bottom-left-radius: 15px;
-        background: rgba(59,209,202,1);
+        background: rgb(114, 114, 114);
     }
     nav.mobile li a:hover{
         font-weight: bold;
@@ -301,39 +422,40 @@ section.sobre{
     header{
         height:80px;
     }
-    header .logo{
-        width: 80%;
-        height: 80px;
-    }
-    header #logo1{
-        margin: 10px auto;
-    }
-    .fotoPerfil{
-        margin-top: 10px;
+    .logo{
+        height: 250px;
         width: 100%;
-        height: 270px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
     }
-    .fotoPerfil img{
-        width: 270px;        
+    .agrupar{
+        margin: -110px 8% 60px 8%;
+    }
+    body{
+        overflow-y:scroll;
     }
     .textoPerfil{
+        color: white;
         width: 100%;
         height: 228px;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
+        margin-top: 30px;
     }
     .textoPerfil h1{
+        font-size: 35px;
         margin-top: 20px;
-        margin-left: 0;
         text-align: center;
+        margin-left: 0;
     }
     .textoPerfil h2,h3,h4{
         text-align: center;
         margin-left: 0;
+    }
+    .textoPerfil h2{
+        font-size: 18px;
+    }
+    .textoPerfil h3,h4{
+        font-size: 15px;
     }
 }
