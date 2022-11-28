@@ -1,3 +1,4 @@
+<?php include('../config.php'); ?>
 <section class="experiencias">
     <div class="center">
         <h1>Experiências</h1>

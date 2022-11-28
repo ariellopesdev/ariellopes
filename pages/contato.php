@@ -1,3 +1,4 @@
+<?php include('../config.php'); ?>
 <section class="container-contato">
     <div class="center">
         <div class="dados">
@@ -8,7 +9,12 @@
         </div>
         <!--dados-->
         <div class="linkedin">
-            <a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            <ul>
+                <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-envelope"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
+            </ul>   
         </div>
         <!--linkedin-->
     </div>

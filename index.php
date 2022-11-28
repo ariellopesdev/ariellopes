@@ -21,15 +21,7 @@
 <body>
     <base base="<?php echo INCLUDE_PATH; ?>" />
     <?php
-    $url = isset($_GET['url']) ? $_GET['url'] : 'home';
-    switch ($url) {
-        case 'depoimentos':
-            echo '<target target="depoimentos" />';
-            break;
-        case 'servicos':
-            echo '<target target="servicos" />';
-            break;
-    }
+        $url = isset($_GET['url']) ? $_GET['url'] : 'home';
     ?>
     <header>
         <div class="center">
@@ -63,22 +55,15 @@
     </header>
     <div class="container-principal">
         <?php
-        if (file_exists('pages/' . $url . '.php')) {
-            include('pages/' . $url . '.php');
-        } else {
-            if ($url != 'depoimentos' && $url != 'servicos') {
-                $pagina404 = true;
-                include('pages/404.php');
-            } else {
-                include('pages/home.php');
+            if (file_exists('pages/' . $url . '.php')) {
+                include('pages/' . $url . '.php');
             }
-        }
         ?>
         <?php
-            $url = isset($_GET['url']) ? $_GET['url'] : 'contato';
             $url = isset($_GET['url']) ? $_GET['url'] : 'sobre';
-            $url = isset($_GET['url']) ? $_GET['url'] : 'especialidades';
             $url = isset($_GET['url']) ? $_GET['url'] : 'experiencias';
+            $url = isset($_GET['url']) ? $_GET['url'] : 'especialidades';
+            $url = isset($_GET['url']) ? $_GET['url'] : 'contato';
         ?>
     </div>
     <!--container-principal-->
@@ -89,8 +74,8 @@
                 <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
                 <li><a href="#"><i class="fa-solid fa-envelope"></i></a></li>
                 <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
-            </ul>           
-            <p>Todos os direitos reservados</p>
+            </ul>
+            <p>Todos os direitos reservados <i class="fa fa-copyright" aria-hidden="true"></i></p>
         </div>
         <!--center-->
     </footer>

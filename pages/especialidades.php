@@ -1,3 +1,4 @@
+<?php include('../config.php'); ?>
 <section class="especialidades">
     <div class="center">
         <h1>Especialidades</h1>
@@ -44,7 +45,7 @@
         </div>
         <!--w33 left box-especialidades-->
         <div class="w33 left box-especialidades">
-            <h3><img src="imagens/php.png"> </h3>
+            <h3><img src="../imagens/php.png"> </h3>
             <h4>PHP</h4>
             <label for="range">Nível de conhecimento (entre 1 e 5):</label>
             <input type="range" id="nivel" name="volume" min="1" max="5">

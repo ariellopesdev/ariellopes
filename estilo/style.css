@@ -24,7 +24,6 @@ html{
 body{
     height: 700px;
     overflow-x: hidden;
-    /*overflow-y: hidden;*/
 }
 .center {
     max-width: 1280px;
@@ -128,8 +127,6 @@ section.introducao{
 }
 .agrupar{
     height: 450px;
-    position: relative;
-    right: 100px;
 }
 .loader{
     --path: #ff8c00;
@@ -139,8 +136,9 @@ section.introducao{
     z-index: -1;
 }
 .loader h1{
-    position: relative;
-    top: 182px;
+    position: absolute;
+    top: 282px;
+    left: 200px;
     font-size: 60px;
     z-index: 2;
     width: 210px;
@@ -149,16 +147,16 @@ section.introducao{
 .loader p{
     font-size: 260px;
     transform: rotate(-22deg);
-    position: relative;
-    top: -70px;
-    left: 170px;
+    position: absolute;
+    top: 130px;
+    left: 360px;
     width: 200px;
     color: rgba(59,209,202,1);
 }
 .loader svg{
-    position: relative;
-    top: -430px;
-    left: 92px;
+    position: absolute;
+    top: 160px;
+    left: 293px;
     z-index: 1;
     height: 350px;
 }
@@ -245,12 +243,13 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(46, 46, 46);
-    height: 120px;
+    background-color: rgb(67, 67, 67);
+    height: 90px;
 }
 footer ul{
     position: relative;
     display: flex;
+    top: 10px;
 }
 footer ul li{
     position: relative;
@@ -309,7 +308,8 @@ footer ul li:hover a::before{
 footer p{
     margin-top: 15px;
     text-align: center;
-    font: 15px;
+    font-size: 12px;
+    color: black;
 }
 @keyframes type {
     from {
@@ -362,15 +362,29 @@ footer p{
         stroke-dashoffset: 275;
     }
 }
-@media screen and (max-width: 1200px) {
-    .agrupar{
-        right: 60px;
+@media screen and (max-width: 1250px) {
+    .loader h1{
+        left: 120px;
+    }
+    .loader p{
+        left: 280px;
+    }
+    .loader svg{
+        left: 213px;
     }
 }
-@media screen and (max-width: 950px) {
-    
+@media screen and (max-width: 1050px) {
+    .loader h1{
+        left: 80px;
+    }
+    .loader p{
+        left: 240px;
+    }
+    .loader svg{
+        left: 173px;
+    }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 900px) {
     nav.desktop {
         display: none;
     }
@@ -383,7 +397,7 @@ footer p{
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 24px;
+        font-size: 32px;
         cursor: pointer;
         color: rgba(59,209,202,1);
     }
@@ -419,18 +433,27 @@ footer p{
         width: 100%;
         height: 100%;
     }
-    header{
-        height:80px;
+    .loader h1{
+        left: 40px;
+    }
+    .loader p{
+        left: 200px;
+    }
+    .loader svg{
+        left: 133px;
     }
     .logo{
         height: 250px;
         width: 100%;
     }
-    .agrupar{
-        margin: -110px 8% 60px 8%;
+    .loader h1{
+        top: 197;
     }
-    body{
-        overflow-y:scroll;
+    .loader p{
+        top: 45px;
+    }
+    .loader svg{
+        top: 75px;
     }
     .textoPerfil{
         color: white;
@@ -440,7 +463,7 @@ footer p{
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
-        margin-top: 30px;
+        margin-top: 50px;
     }
     .textoPerfil h1{
         font-size: 35px;
@@ -457,5 +480,17 @@ footer p{
     }
     .textoPerfil h3,h4{
         font-size: 15px;
+    }
+    footer{
+        margin-top: 130px;
+    }
+    footer ul li a .fa-brands{
+        font-size: 2.3em;
+    }
+    footer ul li a .fa-solid{
+        font-size: 2.3em;
+    }
+    footer ul li a::before{
+        font-size: 2.3em;
     }
 }
