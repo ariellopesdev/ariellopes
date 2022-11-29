@@ -22,7 +22,7 @@ html{
     -webkit-font-smoothing: antialiased;
 }
 body{
-    height: 700px;
+    height: 800px;
     overflow-x: hidden;
 }
 .center {
@@ -176,7 +176,7 @@ section.introducao{
     width: 50%;
     height: 100%;
 }
-.textoPerfil h1, h2, h3, h4{
+.textoPerfil h1, .textoPerfil h2, .textoPerfil h3, .textoPerfil h4{
     margin-top: 140px;
     margin-left: 60px;
     white-space: nowrap;
@@ -197,10 +197,9 @@ section.introducao{
     animation-fill-mode: forwards;
     animation-delay: 2s;
 }
-.textoPerfil h3, h4{
+.textoPerfil h3, .textoPerfil h4{
     margin-top: 10px;
     font-size: 20px;
-    font-family: 'Roboto', sans-serif;
     font-weight: 600;
     animation: type3 2s steps(40, end);
     animation-delay: 4s;
@@ -211,34 +210,114 @@ section.introducao{
     animation-delay: 6s;
     animation-fill-mode: forwards;
 }
-section.sobre{
-    margin-top: 40px;
-    height: 400px;
-    
+.sobre{
+    margin-top: 20px;
+    height: 480px;
+    /* background-color: orange; */
 }
 .sobre .center{
     height: 100%;
+    bottom: 60px;
+    /* background-color: #25d366; */
 }
 .sobre h1{
     font-size: 40px;
+    padding-left: 15px;
+    margin-bottom: 36px;
+    border-left: 2px solid rgba(59,209,202,1);
+    border-bottom: 2px solid rgba(59,209,202,1);
+    /* background-color: red;  */
 }
-.sobre img{
-    width: 300px;
-    height: 300px;
-    margin: 20px 50%;
-}
-.sobre p{
-    margin-left: -60px;
-    text-align: left;
-    width: 100%;
-    height: 300px;
-    font-weight: 400;
-    font-size: 20px;
-    margin-top: 20px;
+.sobre .foto{
+    /* background-color: aquamarine; */
     display: flex;
+    justify-content: center;
     align-items: center;
 }
+.sobre img{
+    width: 380px;
+    height: 380px;
+    border-left: 1px solid rgba(59,209,202,1);
+    border-bottom: 1px solid #ff8c00;
+    border-right: 1px solid #ff8c00;
+    box-shadow: -5px -10px 30px rgba(59,209,202,1), 6px 9px 15px#ff8c00;
+    -webkit-box-shadow: -5px -10px 30px rgba(59,209,202,1), 6px 9px 15px #ff8c00;
+    -moz-box-shadow: -5px -10px 30px rgba(59,209,202,1), 6px 9px 15px #ff8c00;
+}
+.sobre .apresentacao{
+    /* background-color: yellow; */
+    padding: 0 6% !important;
+}
+.sobre p{
+    /* background-color: #0e76a8; */
+    height: 380px;
+    width: 100%;
+    font-weight: 400;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    text-align: justify;
+}
+.contato{
+    margin-top: 20px;
+    height: 600px;
+}
+.contato .center{
+    height: 100%;
+}
+.contato .dados h1{
+    font-size: 40px;
+    padding-left: 15px;
+    margin-bottom: 50px;
+    border-left: 2px solid rgba(59,209,202,1);
+    border-bottom: 2px solid rgba(59,209,202,1);
+}
+.contato .dados p{
+    margin-bottom: 5px;
+    font-size: 17px;
+    padding-left: 15px;
+    border-left: 1px solid rgba(59,209,202,1);  
+}
+.especialidades{
+    margin-top: 20px;
+    height: 900px;
+    background-color: yellow;
+}
+.especialidades .center{
+    height: 100%;
+    background-color: blue;
+}
+.especialidades .w33{
+    background-color: green;
+    margin: 5px;
+    padding: 0;
+}
+.especialidades h1{
+    font-size: 40px;
+    padding-left: 15px;
+    margin-bottom: 36px;
+    border-left: 2px solid rgba(59,209,202,1);
+    border-bottom: 2px solid rgba(59,209,202,1);
+}
+.especialidades h3{
+    white-space: none;
+    overflow: none;
+    animation: none;
+    animation-delay:none;
+    animation-fill-mode: none;
+    background-color: #0047ab;
+}
+.especialidades h4{
+    background-color: #25d366;
+    margin-left: 0;
+}   
+.especialidades label{
+    background-color: aquamarine;
+}   
 footer{
+    position: absolute; 
+    bottom: 0; 
+    width: 100%;
     margin-top: 70px;
     display: flex;
     justify-content: center;
@@ -385,6 +464,9 @@ footer p{
     }
 }
 @media screen and (max-width: 900px) {
+    body{
+        height: 1000px;
+    }
     nav.desktop {
         display: none;
     }
@@ -471,15 +553,31 @@ footer p{
         text-align: center;
         margin-left: 0;
     }
-    .textoPerfil h2,h3,h4{
+    .textoPerfil h2,.textoPerfilh3,.textoPerfilh4{
         text-align: center;
         margin-left: 0;
     }
     .textoPerfil h2{
         font-size: 18px;
     }
-    .textoPerfil h3,h4{
+    .textoPerfil h3,.textoPerfil h4{
         font-size: 15px;
+    }
+    .sobre h1{
+        text-align: center;
+    }
+    .sobre .foto{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .sobre .apresentacao{
+        align-items: flex-start;
+        width: 100%;
+        margin-top: -40px;
+        margin-bottom: 30px;
+    }
+    .contato .dados h1{
+        text-align: center;
     }
     footer{
         margin-top: 130px;
