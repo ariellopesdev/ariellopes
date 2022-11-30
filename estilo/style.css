@@ -22,7 +22,6 @@ html{
     -webkit-font-smoothing: antialiased;
 }
 body{
-    height: 800px;
     overflow-x: hidden;
 }
 .center {
@@ -211,7 +210,7 @@ section.introducao{
     animation-fill-mode: forwards;
 }
 .sobre{
-    margin-top: 20px;
+    padding-top: 20px;
     height: 480px;
     /* background-color: orange; */
 }
@@ -259,7 +258,7 @@ section.introducao{
     text-align: justify;
 }
 .contato{
-    margin-top: 20px;
+    padding-top: 20px;
     height: 600px;
 }
 .contato .center{
@@ -279,43 +278,50 @@ section.introducao{
     border-left: 1px solid rgba(59,209,202,1);  
 }
 .especialidades{
-    margin-top: 20px;
-    height: 900px;
+    padding-top: 20px;
     background-color: yellow;
 }
 .especialidades .center{
-    height: 100%;
     background-color: blue;
 }
-.especialidades .w33{
-    background-color: green;
-    margin: 5px;
-    padding: 0;
+.especialidades .wrap{
+    display: flex;
+    flex-wrap: wrap;
+}
+.especialidades .box-especialidades{
+    background-color: rgb(255, 83, 232);
+    padding: 0 ;
+    margin: 10px;
+    width: 300px;
+    height: 200px;
 }
 .especialidades h1{
+    background-color: #ff8c00;
     font-size: 40px;
     padding-left: 15px;
-    margin-bottom: 36px;
+    margin-bottom: 20px;
     border-left: 2px solid rgba(59,209,202,1);
     border-bottom: 2px solid rgba(59,209,202,1);
 }
-.especialidades h3{
-    white-space: none;
-    overflow: none;
-    animation: none;
-    animation-delay:none;
-    animation-fill-mode: none;
-    background-color: #0047ab;
+.especialidades img{
+    width: 40px;
+    height: 50px;
+    position: absolute;
+}
+#php, #ingles, #bootstrap{
+    width: 50px;
+    height: 40px;
+    position: absolute;
 }
 .especialidades h4{
     background-color: #25d366;
-    margin-left: 0;
+    padding-left: 55px;
 }   
 .especialidades label{
     background-color: aquamarine;
 }   
 footer{
-    position: absolute; 
+    position: static; 
     bottom: 0; 
     width: 100%;
     margin-top: 70px;
@@ -553,7 +559,7 @@ footer p{
         text-align: center;
         margin-left: 0;
     }
-    .textoPerfil h2,.textoPerfilh3,.textoPerfilh4{
+    .textoPerfil h2,.textoPerfil h3,.textoPerfil h4{
         text-align: center;
         margin-left: 0;
     }
