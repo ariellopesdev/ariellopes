@@ -4,13 +4,13 @@
         <div class="soft-skills w50 left">
             <h2>Soft Skills</h2>
             <ul>
-                <li>Boa comunicação</li>
+                <li>Comunicação</li>
                 <li>Pró-atividade</li>
                 <li>Pontualidade</li>
                 <li>Obstinação</li>
                 <li>Resiliência</li>
-                <li>Trabalho em Equipe</li>
-                <li>Resolução de Problemas</li>
+                <li>Colaboração</li>
+                <li>Resolução</li>
                 <li>Autogerenciamento</li></br>
                 <ul><h2>Inglês</h2>
                     <li>Reading - Médio</li>
