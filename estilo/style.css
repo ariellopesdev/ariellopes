@@ -279,24 +279,37 @@ section.introducao{
 }
 .especialidades{
     padding-top: 20px;
-    background-color: yellow;
 }
-.especialidades .center{
-    background-color: blue;
+.soft-skills h2{
+    text-align: center;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    border-bottom:1px solid #ff8c00;
 }
-.especialidades .wrap{
+.soft-skills li{
+    font-size: 20px;
+}
+.hard-skills{
+    padding: 0;
+}
+.hard-skills h2{
+    text-align: center;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    border-bottom:1px solid #ff8c00;
+}
+.hard-skills .wrap{
+    padding-left: 8%;
     display: flex;
     flex-wrap: wrap;
 }
 .especialidades .box-especialidades{
-    background-color: rgb(255, 83, 232);
-    padding: 0 ;
-    margin: 10px;
-    width: 300px;
-    height: 200px;
+    padding: 0;
+    margin: 5px 40px 5px;
+    width: 80px;
+    height: 100px;
 }
 .especialidades h1{
-    background-color: #ff8c00;
     font-size: 40px;
     padding-left: 15px;
     margin-bottom: 20px;
@@ -304,22 +317,20 @@ section.introducao{
     border-bottom: 2px solid rgba(59,209,202,1);
 }
 .especialidades img{
-    width: 40px;
+    width: 45px;
     height: 50px;
-    position: absolute;
+    margin: 0 25%;
 }
 #php, #ingles, #bootstrap{
     width: 50px;
-    height: 40px;
-    position: absolute;
+    height: 42px;
+    margin: 0 20%;
 }
 .especialidades h4{
-    background-color: #25d366;
-    padding-left: 55px;
-}   
-.especialidades label{
-    background-color: aquamarine;
-}   
+    padding-top: 10px;
+    text-align: center;
+    color: white;
+}    
 footer{
     position: static; 
     bottom: 0; 
@@ -470,9 +481,6 @@ footer p{
     }
 }
 @media screen and (max-width: 900px) {
-    body{
-        height: 1000px;
-    }
     nav.desktop {
         display: none;
     }
@@ -585,6 +593,9 @@ footer p{
     .contato .dados h1{
         text-align: center;
     }
+    .soft-skills li{
+        font-size: 17px;
+    }
     footer{
         margin-top: 130px;
     }
@@ -598,3 +609,13 @@ footer p{
         font-size: 2.3em;
     }
 }
+@media screen and (max-width: 684px) {
+    .hard-skills .wrap{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0;
+    }
+}
+
