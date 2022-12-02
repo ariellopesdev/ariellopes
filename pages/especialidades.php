@@ -10,7 +10,7 @@
                 <li>Obstinação</li>
                 <li>Resiliência</li>
                 <li>Colaboração</li>
-                <li>Resolução</li>
+                <li>Resolução de Problemas</li>
                 <li>Autogerenciamento</li></br>
                 <ul><h2>Inglês</h2>
                     <li>Reading - Médio</li>

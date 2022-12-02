@@ -29,7 +29,7 @@
                 <a href="<?php echo INCLUDE_PATH; ?>">Home</a>
                 <a realtime="sobre" href="<?php echo INCLUDE_PATH; ?>sobre">Sobre</a>
                 <a realtime="especialidades" href="<?php echo INCLUDE_PATH; ?>especialidades">Especialidades</a>
-                <a realtime="experiencias" href="<?php echo INCLUDE_PATH; ?>experiencias">Experiências</a>
+                <a realtime="projetos" href="<?php echo INCLUDE_PATH; ?>projetos">Projetos</a>
                 <a realtime="contato" href="<?php echo INCLUDE_PATH; ?>contato">Contato</a>
                 <div class="animation start-home"></div>
                 </ul>
@@ -44,7 +44,7 @@
                     <li><a href="<?php echo INCLUDE_PATH; ?>">Home</a></li>
                     <li><a realtime="sobre" href="<?php echo INCLUDE_PATH; ?>sobre">Sobre</a></li>
                     <li><a realtime="especialidades" href="<?php echo INCLUDE_PATH; ?>especialidades">Especialidades</a></li>
-                    <li><a realtime="experiencias" href="<?php echo INCLUDE_PATH; ?>experiencias">Experiências</a></li>
+                    <li><a realtime="projetos" href="<?php echo INCLUDE_PATH; ?>projetos">Projetos</a></li>
                     <li><a realtime="contato" href="<?php echo INCLUDE_PATH; ?>contato">Contato</a></li>
                 </ul>
             </nav>
@@ -61,7 +61,7 @@
         ?>
         <?php
             $url = isset($_GET['url']) ? $_GET['url'] : 'sobre';
-            $url = isset($_GET['url']) ? $_GET['url'] : 'experiencias';
+            $url = isset($_GET['url']) ? $_GET['url'] : 'projetos';
             $url = isset($_GET['url']) ? $_GET['url'] : 'especialidades';
             $url = isset($_GET['url']) ? $_GET['url'] : 'contato';
         ?>
