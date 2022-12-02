@@ -330,6 +330,39 @@ section.introducao{
     border-left: 2px solid rgba(59,209,202,1);
     border-bottom: 2px solid rgba(59,209,202,1);
 }
+.projetos .container-projetos{
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.projetos .box-projetos{
+    width: 350px;
+    height: 250px;
+    margin-bottom: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.projetos .box-projetos h2{
+    height: 45px;
+    background-color: #444444;
+    width: 100%;
+    text-align: center;
+    line-height: 45px;
+}
+.projetos .box-projetos video{
+    background: rgba( 255, 255, 255, 0.05 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 1.5px );
+    -webkit-backdrop-filter: blur( 1.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    width: 100%;
+    height: 80%;
+}
+/* .projetos .box-projetos video source{
+    background-color: red;
+} */
 .contato{
     height: 100%;
 } 
@@ -698,6 +731,12 @@ footer p{
         width: 100%;
         margin-top: -40px;
         margin-bottom: 30px;
+    }
+    .especialidades h1{
+        text-align: center;
+    }
+    .projetos h1{
+        text-align: center;
     }
     .soft-skills li{
         font-size: 17px;

@@ -14,7 +14,7 @@
             <div class="container">
             <div class="dadosPessoais">
                 <h2>Telefone/Whatsapp</h2>
-                <p>(041) 99139-3836</p>
+                <p><a href="tel:+5541991393836">+55 (041) 99139-3836</a></p>
             </div>
             <!--dadosPessoais-->
             <div class="dadosPessoais">
@@ -24,7 +24,7 @@
             <!--dadosPessoais-->
             <div class="dadosPessoais">
                 <h2>Linkedin</h2>
-                <p><a href="#">Linkedin</a></p>
+                <p><a href="https://www.linkedin.com/in/ariel-lopes-71000821b/" target="_blank">Linkedin</a></p>
             </div>
             <!--dadosPessoais-->
             <div class="dadosPessoais">

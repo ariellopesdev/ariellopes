@@ -70,10 +70,10 @@
     <footer <?php if (isset($pagina404) && $pagina404 == true) echo 'class="fixed"' ?>>
         <div class="center">
             <ul>
-                <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/ariel-lopes-71000821b/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
                 <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
                 <li><a href="#"><i class="fa-solid fa-envelope"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
+                <li><a href="tel:+5541991393836"><i class="fa-brands fa-whatsapp"></i></a></li>
             </ul>
             <p>Todos os direitos reservados <i class="fa fa-copyright" aria-hidden="true"></i></p>
         </div>
