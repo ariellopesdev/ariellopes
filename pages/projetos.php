@@ -1,3 +1,9 @@
+<style>
+    .start-home{
+        width: 150px;
+        left: 360px;
+    }       
+</style>
 <section class="projetos">
     <div class="center">
         <h1>Projetos</h1>

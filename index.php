@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Portifólio</title>
+    <title>Portfólio</title>
     <link rel="stylesheet" href="<?php echo INCLUDE_PATH; ?>estilo/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
@@ -12,7 +12,7 @@
     <meta http-equiv="pragma" content="no-cache" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="palavras-chave, do, meu, site">
-    <meta name="description" content="Portifólio">
+    <meta name="description" content="Portfólio">
     <meta name="author" content="Ariel Lopes">
     <meta charset="utf-8" />
     <link rel="icon" href="<?php echo INCLUDE_PATH; ?>favicon.ico" type="image/x-icon" />
@@ -32,7 +32,6 @@
                 <a realtime="projetos" href="<?php echo INCLUDE_PATH; ?>projetos">Projetos</a>
                 <a realtime="contato" href="<?php echo INCLUDE_PATH; ?>contato">Contato</a>
                 <div class="animation start-home"></div>
-                </ul>
             </nav>
             <!--desktop-->
             <nav class="mobile right">

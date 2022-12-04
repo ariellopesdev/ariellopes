@@ -1,8 +1,14 @@
+<style>
+    .start-home{
+        width: 100px;
+        left: 0;
+    }       
+</style>
 <section class="introducao">
     <div class="center">
         <div class="logo left">
             <div class="loader">
-                <div class="agrupar right">
+                <div class="agrupar">
                     <h1>Lopes</h1>
                     <p>A</p>
                     <svg viewBox="0 0 80 80">

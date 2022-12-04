@@ -1,3 +1,9 @@
+<style>
+    .start-home{
+        width: 150px;
+        left: 210px;
+    }       
+</style>
 <section class="especialidades">
     <div class="center">
         <h1>Especialidades</h1>

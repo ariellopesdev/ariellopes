@@ -1,3 +1,9 @@
+<style>
+    .start-home{
+        width: 110px;
+        left: 100px;
+    }       
+</style>
 <section class="sobre">
     <div class="center">
         <h1>Sobre</h1>

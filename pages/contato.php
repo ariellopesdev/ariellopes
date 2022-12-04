@@ -1,3 +1,9 @@
+<style>
+    .start-home{
+        width: 120px;
+        left: 510px;
+    }       
+</style>
 <section class="contato">
     <div class="center">
         <div class="formulario w50 left">
@@ -12,32 +18,33 @@
         <!--formulario w50 left-->
         <div class="dados w50 right">
             <div class="container">
-            <div class="dadosPessoais">
-                <h2>Telefone/Whatsapp</h2>
-                <p><a href="tel:+5541991393836">+55 (041) 99139-3836</a></p>
+                <div class="dadosPessoais">
+                    <h2>Telefone/Whatsapp</h2>
+                    <p><a href="tel:+5541991393836">+55 (041) 99139-3836</a></p>
+                </div>
+                <!--dadosPessoais-->
+                <div class="dadosPessoais">
+                    <h2>Github</h2>
+                    <p><a href="#">Github</a></p>
+                </div>
+                <!--dadosPessoais-->
+                <div class="dadosPessoais">
+                    <h2>Linkedin</h2>
+                    <p><a href="https://www.linkedin.com/in/ariel-lopes-71000821b/" target="_blank">Linkedin</a></p>
+                </div>
+                <!--dadosPessoais-->
+                <div class="dadosPessoais">
+                    <h2>E-mail</h2>
+                    <p>ariel_lopescwb2017@hotmail.com</p>
+                </div>
+                <!--dadosPessoais-->
+                <div class="dadosPessoais">
+                    <h2>Endereço</h2>
+                    <p>Centro, Curitiba, PR</p>
+                </div>
+                <!--dadosPessoais-->
             </div>
-            <!--dadosPessoais-->
-            <div class="dadosPessoais">
-                <h2>Github</h2>
-                <p><a href="#">Github</a></p>
-            </div>
-            <!--dadosPessoais-->
-            <div class="dadosPessoais">
-                <h2>Linkedin</h2>
-                <p><a href="https://www.linkedin.com/in/ariel-lopes-71000821b/" target="_blank">Linkedin</a></p>
-            </div>
-            <!--dadosPessoais-->
-            <div class="dadosPessoais">
-                <h2>E-mail</h2>
-                <p>ariel_lopescwb2017@hotmail.com</p>
-            </div>
-            <!--dadosPessoais-->
-            <div class="dadosPessoais">
-                <h2>Endereço</h2>
-                <p>Centro, Curitiba, PR</p>
-            </div>
-            <!--dadosPessoais-->
-            </div><!--container-->
+            <!--container-->
         </div>
         <!--dados w50 right-->
     </div>
