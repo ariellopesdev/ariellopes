@@ -119,13 +119,16 @@ nav.mobile{
 section.introducao{
     margin-top: 30px;
     height: 450px;
+    background-color: red;
 }
 .logo{
     width: 50%;
     height: 100%;
+    background-color: green;
 }
 .agrupar{
     height: 450px;
+    background-color: #09095a;
 }
 .loader{
     --path: #ff8c00;
@@ -133,6 +136,7 @@ section.introducao{
     width: 100%;
     height: 100%;
     z-index: -1;
+    background-color: blue;
 }
 .loader h1{
     position: absolute;
@@ -142,6 +146,7 @@ section.introducao{
     z-index: 2;
     width: 210px;
     color: rgba(59,209,202,1);
+    background-color: brown;
 }
 .loader p{
     font-size: 260px;
@@ -151,6 +156,7 @@ section.introducao{
     left: 360px;
     width: 200px;
     color: rgba(59,209,202,1);
+    background-color: coral;
 }
 .loader svg{
     position: absolute;
@@ -158,6 +164,7 @@ section.introducao{
     left: 293px;
     z-index: 1;
     height: 350px;
+    background-color: chartreuse;
 }
 .loader svg circle{
     fill: none;
@@ -165,6 +172,7 @@ section.introducao{
     stroke-width: 1px;
     stroke-linejoin: round;
     stroke-linecap: round;
+    background-color:darkgreen;
 }
 .loader svg circle{
     stroke-dasharray: 150 50 150 50;
@@ -174,6 +182,7 @@ section.introducao{
 .textoPerfil{
     width: 50%;
     height: 100%;
+    background-color: #0e76a8;
 }
 .textoPerfil h1, .textoPerfil h2, .textoPerfil h3, .textoPerfil h4{
     margin-top: 140px;
@@ -666,13 +675,13 @@ footer p{
         height: 100%;
     }
     .loader h1{
-        left: 40px;
+        left: 20px;
     }
     .loader p{
-        left: 200px;
+        left: 1800px;
     }
     .loader svg{
-        left: 133px;
+        left: 113px;
     }
     .logo{
         height: 250px;
@@ -690,10 +699,9 @@ footer p{
     .textoPerfil{
         color: white;
         width: 100%;
-        height: 228px;
+        height: 400px;
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
         align-items: center;
         margin-top: 50px;
     }
