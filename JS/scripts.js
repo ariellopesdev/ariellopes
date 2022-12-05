@@ -33,12 +33,4 @@ $(function () {
             listaMenu.slideToggle();
         }
     })
-    carregarDinamico();
-    function carregarDinamico() {
-        $('[realtime]').click(function () {
-            var pagina = $(this).attr('realtime');
-            $('.container-principal').load(include_path+'pages/' + pagina + '.php');
-            return false;
-        })
-    }
 })
