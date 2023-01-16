@@ -86,10 +86,10 @@ nav.desktop a:nth-child(1):hover~.animation{
     left: 0;
 }
 nav.desktop a:nth-child(2){
-    width: 110px;
+    width: 150px;
 }
 nav.desktop a:nth-child(2):hover~.animation{
-    width: 110px;
+    width: 150px;
     left: 100px;
 }
 nav.desktop a:nth-child(3){
@@ -97,14 +97,14 @@ nav.desktop a:nth-child(3){
 }
 nav.desktop a:nth-child(3):hover~.animation{
     width: 150px;
-    left: 210px;
+    left: 250px;
 }
 nav.desktop a:nth-child(4){
-    width: 150px;
+    width: 110px;
 }
 nav.desktop a:nth-child(4):hover~.animation{
-    width: 150px;
-    left: 360px;
+    width: 110px;
+    left: 400px;
 }
 nav.desktop a:nth-child(5){
     width: 120px;
@@ -372,6 +372,7 @@ nav.mobile{
 }
 .contato{
     padding-top: 30px;
+    height: 100%;
 } 
 .contato .center{
     height: 400px;
