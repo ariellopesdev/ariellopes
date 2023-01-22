@@ -116,10 +116,12 @@ nav.desktop a:nth-child(5):hover~.animation{
 nav.mobile{
     display: none;
 }
-.introducao{
-    margin-top: 30px;
+#introducao{
+    padding-top:30px;
+    margin-bottom: 30px;
+    height: calc(100% - 80px);
 }
-.introducao center{
+#introducao .center{
     height: 450px;
 }
 .logo{
@@ -128,6 +130,7 @@ nav.mobile{
 }
 .agrupar{
     height: 450px;
+    width: 100%;
 }
 .loader{
     --path: #ff8c00;
@@ -211,17 +214,15 @@ nav.mobile{
     animation-delay: 6s;
     animation-fill-mode: forwards;
 }
-.sobre{
+#sobre{
     padding-top: 20px;
-    height: 480px;
-    /* background-color: orange; */
+    margin-bottom: 30px;
+    height: 100vh;
 }
-.sobre .center{
+#sobre .center{
     height: 100%;
-    bottom: 60px;
-    /* background-color: #25d366; */
 }
-.sobre h1{
+#sobre h1{
     font-size: 40px;
     padding-left: 15px;
     margin-bottom: 36px;
@@ -229,13 +230,13 @@ nav.mobile{
     border-bottom: 2px solid rgba(59,209,202,1);
     /* background-color: red;  */
 }
-.sobre .foto{
+#sobre .foto{
     /* background-color: aquamarine; */
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.sobre img{
+#sobre img{
     width: 380px;
     height: 380px;
     border-left: 1px solid rgba(59,209,202,1);
@@ -245,11 +246,11 @@ nav.mobile{
     -webkit-box-shadow: -5px -10px 30px rgba(59,209,202,1), 6px 9px 15px #ff8c00;
     -moz-box-shadow: -5px -10px 30px rgba(59,209,202,1), 6px 9px 15px #ff8c00;
 }
-.sobre .apresentacao{
+#sobre .apresentacao{
     /* background-color: yellow; */
     padding: 0 6% !important;
 }
-.sobre p{
+#sobre p{
     /* background-color: #0e76a8; */
     height: 380px;
     width: 100%;
@@ -259,8 +260,9 @@ nav.mobile{
     align-items: center;
     text-align: justify;
 }
-.especialidades{
+#especialidades{
     padding-top: 20px;
+    margin-bottom: 30px;
 }
 .soft-skills ul li{
     list-style: none;
@@ -294,21 +296,21 @@ nav.mobile{
     flex-wrap: wrap;
     justify-content: center;
 }
-.especialidades .box-especialidades{
+#especialidades .box-especialidades{
     padding: 0;
     margin: 5px 40px 5px;
     width: 100px;
     height: 120px;
     position: relative;
 }
-.especialidades h1{
+#especialidades h1{
     font-size: 40px;
     padding-left: 15px;
     margin-bottom: 20px;
     border-left: 2px solid rgba(59,209,202,1);
     border-bottom: 2px solid rgba(59,209,202,1);
 }
-.especialidades img{
+#especialidades img{
     padding-top: 5px;
     width: 45px;
     height: 50px;
@@ -319,48 +321,49 @@ nav.mobile{
     height: 42px;
     margin: 0 24px;
 }
-.especialidades h3{
+#especialidades h3{
     padding-top: 5px;
     text-align: center;
     color: white;
 }
-.especialidades h4{
+#especialidades h4{
     padding-top: 5px;
     padding-bottom: 10px;
     text-align: center;
     color: rgb(117, 117, 117);
 }   
-.projetos{
+#projetos{
+    margin-bottom: 30px;
     padding-top: 20px;
 }
-.projetos h1{
+#projetos h1{
     font-size: 40px;
     padding-left: 15px;
     margin-bottom: 36px;
     border-left: 2px solid rgba(59,209,202,1);
     border-bottom: 2px solid rgba(59,209,202,1);
 }
-.projetos .container-projetos{
+#projetos .container-projetos{
     padding-top: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-.projetos .box-projetos{
+#projetos .box-projetos{
     width: 350px;
     height: 250px;
     margin-bottom: 15px;
     margin-left: 10px;
     margin-right: 10px;
 }
-.projetos .box-projetos h2{
+#projetos .box-projetos h2{
     height: 45px;
     background-color: #444444;
     width: 100%;
     text-align: center;
     line-height: 45px;
 }
-.projetos .box-projetos video{
+#projetos .box-projetos video{
     background: rgba( 255, 255, 255, 0.05 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 1.5px );
@@ -370,18 +373,18 @@ nav.mobile{
     width: 100%;
     height: 80%;
 }
-.contato{
-    padding-top: 30px;
-    height: 100%;
+#contato{
+    height: 100vh;
+    margin-bottom: 30px;
 } 
-.contato .center{
-    height: 400px;
+#contato .center{
+    height: 100%;
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-bottom: 40px;
+    align-items: center;
 }
-.contato .dados{
+#contato .dados{
     width: 350px;
     position: relative;
     background: rgb(67, 67, 67);
@@ -391,7 +394,7 @@ nav.mobile{
     border-radius: 10px;
     border: 1px solid rgba(59,209,202,1);
 }
-.contato .dados .dadosPessoais{
+#contato .dados .dadosPessoais{
     height: 80px;
     padding-top: 11px;
     padding-bottom: 11px;
@@ -399,36 +402,35 @@ nav.mobile{
     justify-content: center;
     flex-direction: column;
 }
-.contato .dados .dadosPessoais h2{
+#contato .dados .dadosPessoais h2{
     text-align: center;
     font-size: 19px;
     font-weight: 400;
     color: rgb(225, 225, 225);
 }
-.contato .dados .dadosPessoais p{
+#contato .dados .dadosPessoais p{
     text-align: center;
     font-size: 14px;
     padding: 3px 0;
     color: rgb(140, 140, 140);
 }
-.contato .dados .dadosPessoais a{
+#contato .dados .dadosPessoais a{
     text-align: center;
     font-size: 14px;
     padding: 3px 0;
     color: rgb(140, 140, 140);
     text-decoration: none;
 }
-.contato .dados .dadosPessoais a:visited{
+#contato .dados .dadosPessoais a:visited{
     text-decoration: none;
 }
-.contato .dados .dadosPessoais a:hover{
+#contato .dados .dadosPessoais a:hover{
     text-decoration: underline;
 }
 footer{
     position: static; 
     bottom: 0; 
     width: 100%;
-    margin-top: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -622,6 +624,15 @@ footer p{
         width: 100%;
         height: 100%;
     }
+    #introducao{
+        height: calc(100%-80px);
+    }
+    #sobre{
+        height: 140vh;
+    }
+    #contato{
+        height: 100vh;
+    }
     .loader h1{
         left: 20px;
         top: 197;
@@ -638,10 +649,13 @@ footer p{
         height: 250px;
         width: 100%;
     }
+    .agrupar{
+        height: 290px;
+    }
     .textoPerfil{
         color: white;
         width: 100%;
-        height: 400px;
+        height: 150px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -663,20 +677,17 @@ footer p{
     .textoPerfil h3,.textoPerfil h4{
         font-size: 15px;
     }
-    .sobre h1{
+    #sobre h1{
         text-align: center;
     }
-    .sobre .foto{
+    #sobre .foto{
         width: 100%;
         margin: 0 auto;
     }
-    .sobre .apresentacao{
-        align-items: flex-start;
+    #sobre .apresentacao{
         width: 100%;
-        margin-top: -40px;
-        margin-bottom: 30px;
     }
-    .especialidades h1{
+    #especialidades h1{
         text-align: center;
     }
     .soft-skills, .hard-skills{
@@ -695,11 +706,8 @@ footer p{
         width: 82%;
         margin: 0 auto 20px auto;
     }
-    .projetos h1{
+    #projetos h1{
         text-align: center;
-    }
-    footer{
-        margin-top: 130px;
     }
     footer ul li a .fa-brands{
         font-size: 2.3em;
@@ -727,11 +735,11 @@ footer p{
     .textoPerfil{
         margin-top: 20px;
     }
-    .sobre img{
+    #sobre img{
         width: 350px;
         height: 350px;
     }
-    .sobre .apresentacao{
+    #sobre .apresentacao{
         margin-top: 10px;
     }
 }
