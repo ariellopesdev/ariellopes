@@ -457,6 +457,18 @@ footer ul li a .fa-brands{
     font-size: 3em;
     color: #222;
 }
+.box-especialidades .fa-brands{
+    font-family: "FontAwesome";
+    font-style: normal;
+    font-size: 3em;
+    color: #ccc;
+}
+.box-especialidades .fa-solid{
+    font-family: "FontAwesome";
+    font-style: normal;
+    font-size: 3em;
+    color: #ccc;
+}
 footer ul li a .fa-solid{
     font-family: "FontAwesome";
     font-style: normal;
