@@ -3,8 +3,12 @@
 <head>
     <title>Portfólio</title>
     <link rel="stylesheet" href="estilo/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap" rel="stylesheet">
     <link href="estilo/style.css" rel="stylesheet" />
@@ -24,6 +28,15 @@
 </head>
 
 <body>
+    <div id="preloader">
+        <div class="inner">
+            <div class="bolas">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
     <header>
         <div class="center">
             <nav class="desktop right">
@@ -71,7 +84,7 @@
             <!--logo left-->
             <div class="textoPerfil right">
                 <h1>Olá, sou Ariel</h1>
-                <h2>Front-End Júnior</h2>
+                <h2>Front-End Web Developer</h2>
                 <h3>HTML, CSS, Bootstrap, Javascript</h3>
                 <h4>C, C# e PHP</h4>
             </div>
@@ -82,13 +95,17 @@
     <!--introducao-->
     <section id="projetos">
         <div class="center">
-            <h1>Projetos</h1>
+            <h1 class="main-title" id="main-title-projetos">Projetos</h1>
             <div class="container-projetos">
                 <div class="box-projetos">
                     <h2>Parallax Simples</h2>
                     <video width="320" height="240" controls="controls" autoplay="autoplay">
                         <source src="videos_projetos/parallax_1.mp4" type="video/mp4">
                     </video>
+                    <div class="descricao-projetos">
+                        <h3>Linguagens: Html, Css e Javascript</h3>
+                        <p>Uso da técnica parallax de forma simples</p>
+                    </div>
                 </div>
                 <!--box-projetos-->
                 <div class="box-projetos">
@@ -96,6 +113,10 @@
                     <video width="320" height="240" controls="controls" autoplay="autoplay">
                         <source src="videos_projetos/projeto_portfolio.mp4" type="video/mp4">
                     </video>
+                    <div class="descricao-projetos">
+                        <h3>Linguagens: Html, Css, Javascript, PHP, PHPmyadmin, MySql, Jquery</h3>
+                        <p>Projeto desenvolvido durante curso de desenvolvedor web, projeto completo conta com várias técnicas usando todas as linguagens acima citadas, auxiliando e muito em meu aprendizado.</p>
+                    </div>
                 </div>
                 <!--box-projetos-->
                 <div class="box-projetos">
@@ -103,6 +124,10 @@
                     <video width="320" height="240" controls="controls" autoplay="autoplay">
                         <source src="videos_projetos/tuitter.mp4" type="video/mp4">
                     </video>
+                    <div class="descricao-projetos">
+                        <h3>Linguagens: Html, Css e Javascript</h3>
+                        <p>Emulação da página inicial do Site Facebook com simples informações em javascript.</p>
+                    </div>
                 </div>
                 <!--box-projetos-->
                 <div class="box-projetos">
@@ -110,6 +135,10 @@
                     <video width="320" height="240" controls="controls" autoplay="autoplay">
                         <source src="videos_projetos/japao.mp4" type="video/mp4">
                     </video>
+                    <div class="descricao-projetos">
+                        <h3>Linguagens: Html, Css</h3>
+                        <p>Landing page simples, criado em curso com meus alunos.</p>
+                    </div>
                 </div>
                 <!--box-projetos-->
                 <div class="box-projetos">
@@ -117,6 +146,10 @@
                     <video width="320" height="240" controls="controls" autoplay="autoplay">
                         <source src="videos_projetos/login_animado-1.mp4" type="video/mp4">
                     </video>
+                    <div class="descricao-projetos">
+                        <h3>Linguagens: Html, Css</h3>
+                        <p>Formulário completo visando UI/UX.</p>
+                    </div>
                 </div>
                 <!--box-projetos-->
                 <div class="box-projetos">
@@ -124,6 +157,10 @@
                     <video width="320" height="240" controls="controls" autoplay="autoplay">
                         <source src="videos_projetos/animacao_redes_sociais.mp4" type="video/mp4">
                     </video>
+                    <div class="descricao-projetos">
+                        <h3>Linguagens: Html, Css</h3>
+                        <p>Animação simples utilizando técnicas css.</p>
+                    </div>
                 </div>
                 <!--box-projetos-->
                 <div class="box-projetos">
@@ -131,6 +168,10 @@
                     <video width="320" height="240" controls="controls" autoplay="autoplay">
                         <source src="videos_projetos/animacao_round_6.mp4" type="video/mp4">
                     </video>
+                    <div class="descricao-projetos">
+                        <h3>Linguagens: Html, Css</h3>
+                        <p>Animação complexa utilizando técnicas css.</p>
+                    </div>
                 </div>
                 <!--box-projetos-->
                 <div class="box-projetos">
@@ -138,6 +179,10 @@
                     <video width="320" height="240" controls="controls" autoplay="autoplay">
                         <source src="videos_projetos/universo.mp4" type="video/mp4">
                     </video>
+                    <div class="descricao-projetos">
+                        <h3>Linguagens: Html, Css</h3>
+                        <p>Animação complexa utilizando única e exclusivamente css.</p>
+                    </div>
                 </div>
                 <!--box-projetos-->
             </div>
@@ -149,92 +194,117 @@
     <!--projetos-->
     <section id="especialidades">
         <div class="center">
-            <h1>Especialidades</h1>
-            <div class="soft-skills w50 left">
+            <h1 class="main-title" id="main-title-especialidades">Especialidades</h1>
+            <div id="soft-skills">
                 <h2>Soft Skills</h2>
-                <ul>
-                    <li>Comunicação</li>
-                    <li>Pró-atividade</li>
-                    <li>Pontualidade</li>
-                    <li>Obstinação</li>
-                    <li>Resiliência</li>
-                    <li>Colaboração</li>
-                    <li>Resolução de Problemas</li>
-                    <li>Autogerenciamento</li></br>
-                    <ul>
-                        <h2>Inglês</h2>
-                        <li>Reading - Médio</li>
-                        <li>Writing - Médio</li>
-                        <li>Listening - Básico</li>
-                        <li>Speaking - Básico</li>
-                    </ul>
-                </ul>
+                <div class="container-skills">
+                    <div class="box-skills">
+                        <i class="fa fa-comments-o" aria-hidden="true"></i>
+                        <h3>Comunicação</h3>
+                        <hr></hr>
+                        <p>Facilidade ao me comunicacar, boa capacidade em ouvir e absorver.</p>
+                    </div>
+                    <div class="box-skills">
+                        <i class="fa fa-hand-pointer-o" aria-hidden="true"></i>
+                        <h3>Pró-atividade</h3>
+                        <hr></hr>
+                        <p>Gosto de sair da zona de conforto, sempre busco por novas possibilidades e responsabilidades</p>
+                    </div>
+                    <div class="box-skills">
+                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                        <h3>Pontualidade</h3>
+                        <hr></hr>
+                        <p>Sempre no horário e data certa, isso é ótimo para todos.</p>
+                    </div>
+                    <div class="box-skills">
+                        <i class="fa fa-hand-rock-o" aria-hidden="true"></i>
+                        <h3>Obstinação</h3>
+                        <hr></hr>
+                        <p>Pela minha vida, pelo meu futuro, pela minha profissão, por minhas metas.</p>
+                    </div>
+                    <div class="box-skills">
+                        <i class="fa fa-spinner" aria-hidden="true"></i>
+                        <h3>Resiliência</h3>
+                        <hr></hr>
+                        <p>Adaptabilidade a qualquer ambiente e função, independente da pressão ou prazos.</p>
+                    </div>
+                    <div class="box-skills">
+                        <i class="fa fa-users" aria-hidden="true"></i>
+                        <h3>Colaboração</h3>
+                        <hr></hr>
+                        <p>Trabalho em equipe é enriquecimento, é oportunidade e muitas das vezes solução.</p>
+                    </div>
+                    <div class="box-skills">
+                        <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+                        <h3>Resolução de Problemas</h3>
+                        <hr></hr>
+                        <p>Análise bem feita e plano de ação bem construído são o necessário para resolução de problemas.</p>
+                    </div>
+                    <div class="box-skills">
+                        <i class="fa fa-address-card" aria-hidden="true"></i>
+                        <h3>Autogerenciamento</h3>
+                        <hr></hr>
+                        <p>Ter uma rotina de foco, atenção, agilidade e entrega com qualidade. </p>
+                    </div>
+                    <div class="box-skills">
+                        <i class="fa fa-globe" aria-hidden="true"></i>
+                        <h3>Inglês</h3>
+                        <hr></hr>
+                        <p>Nível médio em construção constante. Leitura, escuta, escrita e fala sendo praticadas diariamente.</p>
+                    </div>
+                </div>
             </div>
-            <!--soft-skills w50 left-->
-            <div class="hard-skills w50 right">
+            <!--soft-skills-->
+            <div id="hard-skills">
                 <h2>Hard Skills</h2>
-                <div class="wrap">
-                    <div class="box-especialidades">
-                        <img src="imagens/css.png">
-                        <h3>CSS</h3>
-                        <h4>Médio</h4>
+                <div class="container-skills">
+                    <div class="box-skills">
+                        <img id="resto" src="imagens/css.png">
                     </div>
-                    <!--box-especialidades-->
-                    <div class="box-especialidades">
-                        <img src="imagens/html.png">
-                        <h3>HTML</h3>
-                        <h4>Médio</h4>
+                    <!--box-skills-->
+                    <div class="box-skills">
+                        <img id="resto" src="imagens/html.png">
                     </div>
-                    <!--box-especialidades-->
-                    <div class="box-especialidades">
+                    <!--box-skills-->
+                    <div class="box-skills">
+                        <img id="resto" src="imagens/javascript.png">
+                    </div>
+                    <!--box-skills-->
+                    <div class="box-skills">
                         <img id="bootstrap" src="imagens/bootstrap.png">
-                        <h3>Bootstrap</h3>
-                        <h4>Básico</h4>
                     </div>
-                    <!--box-especialidades-->
-                    <div class="box-especialidades">
-                        <img src="imagens/javascript.png">
-                        <h3>Javascript</h3>
-                        <h4>Médio</h4>
-                    </div>
-                    <!--box-especialidades-->
-                    <div class="box-especialidades">
-                        <img src="imagens/c.png">
-                        <h3>C</h3>
-                        <h4>Médio</h4>
-                    </div>
-                    <!--box-especialidades-->
-                    <div class="box-especialidades">
-                        <img src="imagens/csharp.png">
-                        <h3>C#</h3>
-                        <h4>Básico</h4>
-                    </div>
-                    <!--box-especialidades-->
-                    <div class="box-especialidades">
+                    <!--box-skills-->
+                    <div class="box-skills">
                         <img id="php" src="imagens/php.png">
-                        <h3>PHP</h3>
-                        <h4>Médio</h4>
                     </div>
-                    <!--box-especialidades-->
+                    <!--box-skills-->
+                    <div class="box-skills">
+                        <img id="resto" src="imagens/c.png">
+                    </div>
+                    <!--box-skills-->
+                    <div class="box-skills">
+                        <img id="resto" src="imagens/csharp.png">
+                    </div>
+                    <!--box-skills-->
                 </div>
                 <!--wrap-->
             </div>
             <!--hard-skills-->
-            <div class="clear"></div>
         </div>
         <!--center-->
     </section>
     <!--especialidades-->
     <section id="sobre">
         <div class="center">
-            <h1>Sobre</h1>
+            <h1 class="main-title" id="main-title-sobre">Sobre</h1>
             <div class="foto w50 left">
                 <img src="imagens/perfil.png">
             </div>
             <div class="apresentacao w50 right">
-                <p>&emsp;&emsp;Tenho 28 anos e comecei como Desenvolvedor Front-End com Html, CSS e Javascript, e
-                    continuo me desenvolvendo em linguagens puras.</br>&emsp;&emsp;Aplicando cada vez mais os frameworks
-                    e demais conhecimentos. Estou procurando por ingressar na área de desenvolvimento web.</p>
+                <p>&emsp;&emsp;Sou um Desenvolvedor Web Júnior, trabalho com HTML, CSS, Javascript (JS), PHP, JQuery,
+                    Bootstrap e continuo me desenvolvendo em outras linguagens e frameworks.</br>&emsp;&emsp; Tenho como
+                    objetivo profissional fazer parte de um time em que eu ofereça e adquira conhecimentos
+                    valiosos, mostrando sempre qualidade excepcional.</p>
             </div>
             <div class="clear"></div>
         </div>
@@ -262,7 +332,8 @@
                     <!--dadosPessoais-->
                     <div class="dadosPessoais">
                         <h2>E-mail</h2>
-                        <a href="mailto:ariel_lopescwb2017@hotmail.com?subject=Hello%20again">ariel_lopescwb2017@hotmail.com</a>
+                        <a
+                            href="mailto:ariel_lopescwb2017@hotmail.com?subject=Hello%20again">ariel_lopescwb2017@hotmail.com</a>
                     </div>
                     <!--dadosPessoais-->
                     <div class="dadosPessoais">
@@ -283,11 +354,13 @@
             <ul>
                 <li><a href="https://www.linkedin.com/in/ariel-lopes-71000821b/" target="_blank"><i
                             class="fa-brands fa-linkedin"></i></a></li>
-                <li><a href="https://github.com/ariellopesdev"  target="_blank"><i class="fa-brands fa-github"></i></a></li>
-                <li><a href="mailto:ariel_lopescwb2017@hotmail.com?subject=Hello%20again"><i class="fa-solid fa-envelope"></i></a></li>
+                <li><a href="https://github.com/ariellopesdev" target="_blank"><i class="fa-brands fa-github"></i></a>
+                </li>
+                <li><a href="mailto:ariel_lopescwb2017@hotmail.com?subject=Hello%20again"><i
+                            class="fa-solid fa-envelope"></i></a></li>
                 <li><a href="tel:+5541991393836"><i class="fa-brands fa-whatsapp"></i></a></li>
             </ul>
-            <p>Todos os direitos reservados <i class="fa fa-copyright" aria-hidden="true"></i></p>
+            <p>Todos os direitos reservados <i class="fa fa-copyright" aria-hidden="true"></i> ariellopesdev</p>
         </div>
         <!--center-->
     </footer>

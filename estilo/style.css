@@ -13,7 +13,7 @@ body {
     position: relative;
     z-index: -1;
     background-image: url("../imagens/cool-background.png");
-    color: white;
+    color: #fff;
     background-position: center;
     background-repeat:no-repeat;
     background-size: cover;
@@ -22,7 +22,7 @@ html{
     -webkit-font-smoothing: antialiased;
 }
 body{
-    overflow-x: hidden;
+    overflow: hidder;
 }
 .center {
     max-width: 1280px;
@@ -47,6 +47,76 @@ body{
     clear: both;
 }
 /**Estilização**/
+
+/*Preloader*/
+/* #preloader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(59,209,202,1);
+    z-index: 999;
+}
+#preloader .inner{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.bolas > div{
+    display: inline-block;
+    background-color: #fff;
+    width: 25px;
+    height: 25px;
+    border-radius:100%;
+    margin: 3px;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    animation-name: animarBola;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.bolas > div:nth-child(1){
+    animation-duration: 0.75s;
+    animation-delay: 0;
+}
+.bolas > div:nth-child(2){
+    animation: 0.75s;
+    animation-delay: 0.12s;
+}
+.bolas > div:nth-child(3){
+    animation-duration: 0.75s;
+    animation-delay: 0.24s;
+} */
+
+/*Títulos*/
+.main-title {
+    color: #fff;
+    margin: 0 0 65px 0;
+    font-size:40px;
+    text-align: center;
+}
+.main-title::before{
+    content: ' ';
+    border-bottom: 2px solid rgba(59,209,202,1);;
+    position: absolute;
+    margin-top: 70px;
+}
+#main-title-projetos::before{
+    width: 10%;
+    left: 45%;
+}
+#main-title-especialidades::before{
+    width:15%;
+    left: 43%;
+}
+#main-title-sobre::before{
+    width: 5%;
+    left: 47.5%;
+}
+
+/*Header*/
 header{
     height: 80px;
 }
@@ -61,7 +131,7 @@ nav.desktop a{
     font-weight: 700;
     font-size: 15px;
     text-transform: uppercase;
-    color: white;
+    color: #fff;
     text-decoration: none;
     line-height: 50px;
     position: relative;
@@ -223,12 +293,9 @@ nav.mobile{
     height: 100%;
 }
 #sobre h1{
+    text-align: center;
     font-size: 40px;
-    padding-left: 15px;
     margin-bottom: 36px;
-    border-left: 2px solid rgba(59,209,202,1);
-    border-bottom: 2px solid rgba(59,209,202,1);
-    /* background-color: red;  */
 }
 #sobre .foto{
     /* background-color: aquamarine; */
@@ -239,12 +306,7 @@ nav.mobile{
 #sobre img{
     width: 380px;
     height: 380px;
-    border-left: 1px solid rgba(59,209,202,1);
-    border-bottom: 1px solid #ff8c00;
-    border-right: 1px solid #ff8c00;
-    box-shadow: -5px -10px 30px rgba(59,209,202,1), 6px 9px 15px#ff8c00;
-    -webkit-box-shadow: -5px -10px 30px rgba(59,209,202,1), 6px 9px 15px #ff8c00;
-    -moz-box-shadow: -5px -10px 30px rgba(59,209,202,1), 6px 9px 15px #ff8c00;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
 }
 #sobre .apresentacao{
     /* background-color: yellow; */
@@ -264,84 +326,106 @@ nav.mobile{
     padding-top: 20px;
     margin-bottom: 30px;
 }
-.soft-skills ul li{
-    list-style: none;
-}
-.soft-skills ul li:before{
-    content: '\2022';
-    font-size: 30px;
-    padding: 0 10px 0 0;
-    color: #ff8c00;
-}
-.soft-skills h2{
+#especialidades h1{
     text-align: center;
-    padding-top: 20px;
+    font-size: 40px;
+    margin-bottom: 45px;
+}
+#especialidades h2{
+    font-size:25px;
     margin-bottom: 20px;
-    border-bottom:1px solid #ff8c00;
 }
-.soft-skills li{
-    font-size: 20px;
+#soft-skills h2,
+#hard-skills h2
+{
+    font-size:25px;
+    margin-left: 120px;
+    color: #939393;
 }
-.hard-skills{
-    padding: 0;
-}
-.hard-skills h2{
-    text-align: center;
-    padding-top: 20px;
-    margin-bottom: 20px;
-    border-bottom:1px solid #ff8c00;
-}
-.hard-skills .wrap{
+.container-skills{
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-#especialidades .box-especialidades{
-    padding: 0;
-    margin: 5px 40px 5px;
-    width: 100px;
-    height: 120px;
-    position: relative;
+.container-skills .box-skills{
+    width: 220px;
+    margin: 10px 20px 20px;
+    height: 300px;
+    padding: 12px;
+    background: #3b3b3b;
+    backdrop-filter: blur( 2px );
+    -webkit-backdrop-filter: blur( 2px );
+    border: 1px solid rgba(59,209,202,1);
+    transition: 1s;
 }
-#especialidades h1{
-    font-size: 40px;
-    padding-left: 15px;
+.container-skills .box-skills:hover{
+    border: 1px solid rgba(59,209,202,1);
+    box-shadow: 0 4px 16px 0 rgba(59,209,202,1);
+    backdrop-filter: blur( 2px );
+    -webkit-backdrop-filter: blur( 2px );
+    transition: 1s;
+    backdrop-filter:none;
+    -webkit-backdrop-filter: none;
+}
+.container-skills:hover > :not(:hover){
+    opacity:.3;
+}
+.box-skills i{
+    font-size: 60px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: center;
+    color: rgba(59,209,202,1);
+}
+.box-skills h3{
+    font-size: 18px;
     margin-bottom: 20px;
-    border-left: 2px solid rgba(59,209,202,1);
-    border-bottom: 2px solid rgba(59,209,202,1);
-}
-#especialidades img{
-    padding-top: 5px;
-    width: 45px;
-    height: 50px;
-    margin: 0 28px;
-}
-#php, #ingles, #bootstrap{
-    width: 50px;
-    height: 42px;
-    margin: 0 24px;
-}
-#especialidades h3{
-    padding-top: 5px;
+    color: rgba(59,209,202,1);
     text-align: center;
-    color: white;
 }
-#especialidades h4{
-    padding-top: 5px;
-    padding-bottom: 10px;
+.box-skills hr{
+    border: 1px solid rgb(110, 110, 110);
+}
+.box-skills p{
+    margin-top: 20px;
+    font-size:13px;
     text-align: center;
-    color: rgb(117, 117, 117);
-}   
+    color: #ffffff;
+}
+#hard-skills .box-skills{
+    width: 220px;
+    margin: 10px 20px 20px;
+    height: 220px;
+    background: #3b3b3b;
+    backdrop-filter: blur( 2px );
+    -webkit-backdrop-filter: blur( 2px );
+    border: 1px solid rgba(59,209,202,1);
+    transition: 1s;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    /* border-radius: 50%; */
+}
+.box-skills #resto{
+    font-size: 20px;
+    width: 90px;
+    height: 100px;
+}
+.box-skills #php, .box-skills #bootstrap{
+    font-size: 20px;
+    width: 110px;
+    height: 90px;
+}
 #projetos{
     margin-bottom: 30px;
     padding-top: 20px;
 }
 #projetos h1{
+    text-align: center;
     font-size: 40px;
-    padding-left: 15px;
     margin-bottom: 36px;
-    border-left: 2px solid rgba(59,209,202,1);
-    border-bottom: 2px solid rgba(59,209,202,1);
 }
 #projetos .container-projetos{
     padding-top: 20px;
@@ -351,28 +435,42 @@ nav.mobile{
 }
 #projetos .box-projetos{
     width: 350px;
-    height: 250px;
-    margin-bottom: 15px;
-    margin-left: 10px;
-    margin-right: 10px;
+    height: 400px;
+    margin: 20px;
+    background: #3b3b3b;
+    backdrop-filter: blur( 2px );
+    -webkit-backdrop-filter: blur( 2px );
+    border: 1px solid rgba(59,209,202,1);
+    box-shadow: 0 4px 16px 0 rgba(59,209,202,1);
+    transition: 1s;
 }
 #projetos .box-projetos h2{
+    margin-top: 10px;
     height: 45px;
-    background-color: #444444;
     width: 100%;
     text-align: center;
     line-height: 45px;
 }
 #projetos .box-projetos video{
-    background: rgba( 255, 255, 255, 0.05 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 1.5px );
-    -webkit-backdrop-filter: blur( 1.5px );
-    border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
-    width: 100%;
-    height: 80%;
+    width: 99%;
+    height: 200px;
+    display: flex;
+    margin: -10px auto 10px;
 }
+#projetos .box-projetos .descricao-projetos{
+    height: 150px;
+    width: 100%;
+    padding: 10px;
+}
+#projetos .box-projetos .descricao-projetos h3{
+    font-size: 15px;
+}
+#projetos .box-projetos .descricao-projetos p{
+    font-size: 12px;
+    margin-top: 10px;
+    color:#939393;
+}
+
 #contato{
     height: 100vh;
     margin-bottom: 30px;
@@ -391,7 +489,6 @@ nav.mobile{
     box-shadow: 0 4px 16px 0 rgba(59,209,202,1);
     backdrop-filter: blur( 1.5px );
     -webkit-backdrop-filter: blur( 1.5px );
-    border-radius: 10px;
     border: 1px solid rgba(59,209,202,1);
 }
 #contato .dados .dadosPessoais{
@@ -514,6 +611,23 @@ footer p{
     font-size: 12px;
     color: black;
 }
+@keyframes animarBola{
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 1;
+    }
+    16% {
+        -webkit-transform: scale(0.1);
+        transform: scale(0.1);
+        opacity: 0.7;
+    }
+    33% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 1;
+    }
+}
 @keyframes type {
     from {
         width: 0
@@ -588,6 +702,18 @@ footer p{
     }
 }
 @media screen and (max-width: 900px) {
+    #main-title-projetos::before{
+        width: 120px;
+        left: 37.5%;
+    }
+    #main-title-especialidades::before{
+        width:200px;
+        left: 30%;
+    }
+    #main-title-sobre::before{
+        width: 80px;
+        left: 42%;
+    }
     nav.desktop {
         display: none;
     }
@@ -622,7 +748,7 @@ footer p{
     }
     nav.mobile li a {
         display: block;
-        color: white;
+        color: #fff;
         text-decoration: none;
     }
     nav.mobile li:hover {
@@ -632,7 +758,7 @@ footer p{
     }
     nav.mobile li a:hover{
         font-weight: bold;
-        color: white;
+        color: #fff;
         width: 100%;
         height: 100%;
     }
@@ -642,9 +768,9 @@ footer p{
     #sobre{
         height: 140vh;
     }
-    #contato{
+    /* #contato{
         height: 100vh;
-    }
+    } */
     .loader h1{
         left: 20px;
         top: 197;
@@ -665,7 +791,7 @@ footer p{
         height: 290px;
     }
     .textoPerfil{
-        color: white;
+        color: #fff;
         width: 100%;
         height: 150px;
         display: flex;
@@ -699,24 +825,21 @@ footer p{
     #sobre .apresentacao{
         width: 100%;
     }
-    #especialidades h1{
+    #soft-skills h2,
+    #hard-skills h2{
+        margin: 10px 0;
         text-align: center;
     }
-    .soft-skills, .hard-skills{
-        width: 100%;
+    .container-skills .box-skills{
+        width: 200px;
+        margin-left: 10px;
+        margin-right: 10px;
     }
-    .soft-skills ul{
-        text-align: center;
-    }
-    .soft-skills li{
-        font-size: 17px;
-    }
-    .hard-skills{
-        margin-top: 20px;
-    }
-    .hard-skills h2{
-        width: 82%;
-        margin: 0 auto 20px auto;
+    #hard-skills .box-skills{
+        width: 120px;
+        height: 120px;
+        margin-left: 10px;
+        margin-right: 10px;
     }
     #projetos h1{
         text-align: center;

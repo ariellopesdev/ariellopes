@@ -1,4 +1,10 @@
 $(function () {
+    //Preloader
+    // $(window).on('load', function(){
+    //     $('#preloader .inner').fadeOut();
+    //     $('#preloader').delay(600).fadeOut('slow');
+    //     $('body').delay(600).css({'overflow':'visible'});
+    // })
     //Aqui vai todo nosso código de Javascript//
     $('nav.mobile').click(function () {
         //O que vai acontecer quando clicar nav.mobile//
