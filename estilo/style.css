@@ -368,9 +368,6 @@ nav.mobile{
     backdrop-filter:none;
     -webkit-backdrop-filter: none;
 }
-.container-skills:hover > :not(:hover){
-    opacity:.3;
-}
 .box-skills i{
     font-size: 60px;
     margin-top: 10px;
@@ -768,9 +765,12 @@ footer p{
     #sobre{
         height: 140vh;
     }
-    /* #contato{
-        height: 100vh;
-    } */
+    #contato{
+        height: 100%;
+    }
+    #contato .center{
+        align-items:start;
+    }
     .loader h1{
         left: 20px;
         top: 197;
