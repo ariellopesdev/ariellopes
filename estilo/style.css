@@ -118,7 +118,7 @@ body{
 
 /*Header*/
 header{
-    height: 80px;
+    height: 5em;
 }
 nav.desktop{
     margin-top: 15px;
@@ -189,18 +189,20 @@ nav.mobile{
 #introducao{
     padding-top:30px;
     margin-bottom: 30px;
-    height: calc(100% - 80px);
+    height: calc(100% - 5em);
 }
 #introducao .center{
-    height: 450px;
+    height: 28.1em;
 }
 .logo{
     width: 50%;
     height: 100%;
+    position: relative;
 }
 .agrupar{
-    height: 450px;
-    width: 100%;
+    position: absolute;
+    height: 320px;
+    width: 70%;
 }
 .loader{
     --path: #ff8c00;
@@ -208,31 +210,33 @@ nav.mobile{
     width: 100%;
     height: 100%;
     z-index: -1;
+    display: flex;
+    justify-content:center;
+    align-items: center;
 }
 .loader h1{
     position: absolute;
-    top: 282px;
-    left: 200px;
-    font-size: 60px;
+    font-size: 3.9em;
     z-index: 2;
-    width: 210px;
     color: rgba(59,209,202,1);
+    top: 1.8em;
+    left: 0.1em;
 }
 .loader p{
-    font-size: 260px;
+    font-size: 17em;
     transform: rotate(-22deg);
     position: absolute;
-    top: 130px;
-    left: 360px;
-    width: 200px;
     color: rgba(59,209,202,1);
+    top: -0.2em;
+    left: 0.6em;
+    /* background-color: green; */
 }
 .loader svg{
     position: absolute;
-    top: 160px;
-    left: 293px;
     z-index: 1;
-    height: 350px;
+    height: 22em;
+    left: 6.5em;
+    top: -1em;
 }
 .loader svg circle{
     fill: none;
@@ -249,9 +253,11 @@ nav.mobile{
 .textoPerfil{
     width: 50%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
 }
 .textoPerfil h1, .textoPerfil h2, .textoPerfil h3, .textoPerfil h4{
-    margin-top: 140px;
     margin-left: 60px;
     white-space: nowrap;
     overflow: hidden;
@@ -403,7 +409,6 @@ nav.mobile{
     display: flex;
     justify-content:center;
     align-items: center;
-    /* border-radius: 50%; */
 }
 .box-skills #resto{
     font-size: 20px;
@@ -480,7 +485,7 @@ nav.mobile{
     align-items: center;
 }
 #contato .dados{
-    width: 350px;
+    width: 30em;
     position: relative;
     background: rgb(67, 67, 67);
     box-shadow: 0 4px 16px 0 rgba(59,209,202,1);
@@ -549,7 +554,7 @@ footer ul li a .fa-brands{
     font-family: "FontAwesome";
     font-style: normal;
     font-size: 3em;
-    color: #222;
+    color: rgb(140, 140, 140);
 }
 .box-especialidades .fa-brands{
     font-family: "FontAwesome";
@@ -567,7 +572,7 @@ footer ul li a .fa-solid{
     font-family: "FontAwesome";
     font-style: normal;
     font-size: 3em;
-    color: #222;
+    color: rgb(140, 140, 140);
 }
 footer ul li a::before{
     font-family: "FontAwesome";
@@ -606,7 +611,7 @@ footer p{
     margin-top: 15px;
     text-align: center;
     font-size: 12px;
-    color: black;
+    color: rgb(140, 140, 140);
 }
 @keyframes animarBola{
     0% {
@@ -676,26 +681,61 @@ footer p{
         stroke-dashoffset: 275;
     }
 }
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 1050px){
+    #introducao{
+        height: 100%;
+    }
+    #introducao .center{
+        height: 20em;
+    }
+    .logo{
+        width: 100%;
+    }
+    .loader{
+        align-items:start;
+    }
+    .agrupar{
+        width: 340px;
+    }
     .loader h1{
-        left: 120px;
+        top: 2.5em;
+        font-size: 3.1em;
     }
     .loader p{
-        left: 280px;
+        left: 8.5rem;
+        top: 0.1rem;
+        font-size: 13em;
     }
     .loader svg{
-        left: 213px;
+        top: 2em;
+        font-size: .8em;
     }
-}
-@media screen and (max-width: 1050px) {
-    .loader h1{
-        left: 80px;
+    .textoPerfil{
+        margin-top: 20px;
     }
-    .loader p{
-        left: 240px;
+    .textoPerfil{
+        height: 12em;
+        color: #fff;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
-    .loader svg{
-        left: 173px;
+    .textoPerfil h1{
+        font-size: 35px;
+        margin-top: 20px;
+        text-align: center;
+        margin-left: 0;
+    }
+    .textoPerfil h2,.textoPerfil h3,.textoPerfil h4{
+        text-align: center;
+        margin-left: 0;
+    }
+    .textoPerfil h2{
+        font-size: 18px;
+    }
+    .textoPerfil h3,.textoPerfil h4{
+        font-size: 15px;
     }
 }
 @media screen and (max-width: 900px) {
@@ -759,9 +799,7 @@ footer p{
         width: 100%;
         height: 100%;
     }
-    #introducao{
-        height: calc(100%-80px);
-    }
+    
     #sobre{
         height: 140vh;
     }
@@ -770,50 +808,6 @@ footer p{
     }
     #contato .center{
         align-items:start;
-    }
-    .loader h1{
-        left: 20px;
-        top: 197;
-    }
-    .loader p{
-        left: 180px;
-        top: 45px;
-    }
-    .loader svg{
-        left: 113px;
-        top: 75px;
-    }
-    .logo{
-        height: 250px;
-        width: 100%;
-    }
-    .agrupar{
-        height: 290px;
-    }
-    .textoPerfil{
-        color: #fff;
-        width: 100%;
-        height: 150px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 50px;
-    }
-    .textoPerfil h1{
-        font-size: 35px;
-        margin-top: 20px;
-        text-align: center;
-        margin-left: 0;
-    }
-    .textoPerfil h2,.textoPerfil h3,.textoPerfil h4{
-        text-align: center;
-        margin-left: 0;
-    }
-    .textoPerfil h2{
-        font-size: 18px;
-    }
-    .textoPerfil h3,.textoPerfil h4{
-        font-size: 15px;
     }
     #sobre h1{
         text-align: center;
@@ -855,21 +849,7 @@ footer p{
     }
 }
 @media screen and (max-width: 500px) {
-    .loader h1{
-        left: 30px;
-        font-size: 48px;
-    }
-    .loader p{
-        left: 190px;
-        font-size: 208px;
-    }
-    .loader svg{
-        left: 123px;
-        height: 280px;
-    }
-    .textoPerfil{
-        margin-top: 20px;
-    }
+    
     #sobre img{
         width: 350px;
         height: 350px;
