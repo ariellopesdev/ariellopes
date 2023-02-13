@@ -684,6 +684,7 @@ footer p{
 @media screen and (max-width: 1050px){
     #introducao{
         height: 100%;
+        margin-bottom: 30px;
     }
     #introducao .center{
         height: 20em;
