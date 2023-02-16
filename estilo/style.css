@@ -471,60 +471,76 @@ nav.social-media ul li a .fa-solid:hover{
 #projetos{
     padding-top: 3em;
     margin-bottom: 3em;
-    /* background-color: yellow; */
-}
-/* #projetos .center{
-    background-color: green;
-} */
-#projetos h1{
-    text-align: center;
-    font-size: 40px;
-    margin-bottom: 36px;
 }
 #projetos .container-projetos{
-    padding-top: 20px;
+    padding-top: 1em;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 #projetos .box-projetos{
-    width: 350px;
-    height: 400px;
-    margin: 20px;
+    width: 20em;
+    height: 28em;
+    margin: 1.5em;
     background: #3b3b3b;
-    backdrop-filter: blur( 2px );
-    -webkit-backdrop-filter: blur( 2px );
-    border: 1px solid rgba(59,209,202,1);
-    box-shadow: 0 4px 16px 0 rgba(59,209,202,1);
+    backdrop-filter: blur( 1em);
+    -webkit-backdrop-filter: blur( 1em );
+    border: 0.1em solid rgba(59,209,202,1);
+    box-shadow: 0 0.5rem 0.7rem 0 rgba(0,0,0,.1);
     transition: 1s;
 }
+#projetos .box-projetos:hover{
+    border: 1px solid rgba(59,209,202,1);
+    box-shadow: 0 0.5rem 0.7rem 0 rgba(59,209,202,1);
+    backdrop-filter: blur( 1em);
+    -webkit-backdrop-filter: blur( 1em );
+    transition: 1s;
+    backdrop-filter:none;
+    -webkit-backdrop-filter: none;
+}
 #projetos .box-projetos h2{
-    margin-top: 10px;
-    height: 45px;
+    margin-top: 0.5em;
+    height: 2em;
     width: 100%;
     text-align: center;
-    line-height: 45px;
+    line-height: 2em;
+    color: rgba(59,209,202,1);
 }
 #projetos .box-projetos video{
     width: 99%;
-    height: 200px;
+    height: 12em;
     display: flex;
-    margin: -10px auto 10px;
+    margin: -0.5em auto .5em;
 }
 #projetos .box-projetos .descricao-projetos{
-    height: 150px;
+    height: 12.1em;
     width: 100%;
-    padding: 10px;
+    padding: 0.6em;
 }
 #projetos .box-projetos .descricao-projetos h3{
-    font-size: 15px;
+    font-size: 1em;
 }
 #projetos .box-projetos .descricao-projetos p{
-    font-size: 12px;
-    margin-top: 10px;
+    font-size: 0.8em;
+    margin-top: .6em;
     color:#939393;
 }
-
+#projetos .box-projetos .descricao-projetos a .fa-brands{
+    font-family: "FontAwesome";
+    font-style: normal;
+    font-size: 2em;
+    color: rgb(140, 140, 140);
+}
+#projetos .box-projetos .descricao-projetos a{
+    position: absolute;
+    bottom: 0.5em;
+    right: 0.5em;
+    transition: .3s;
+}
+#projetos .box-projetos .descricao-projetos a .fa-brands:hover{
+    color: rgba(59,209,202,1);
+    transition: .3s;
+}
 #contato{
     padding-top: 3em;
     margin-bottom: 3em;
@@ -956,8 +972,8 @@ footer p{
         height: 100vh;
     }
     #sobre img{
-        width: 20em;
-        height: 20em;
+        width: 18em;
+        height: 18em;
     }
     #sobre .apresentacao{
         height:auto;
