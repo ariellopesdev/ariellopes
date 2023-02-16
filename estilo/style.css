@@ -489,15 +489,6 @@ nav.social-media ul li a .fa-solid:hover{
     box-shadow: 0 0.5rem 0.7rem 0 rgba(0,0,0,.1);
     transition: 1s;
 }
-#projetos .box-projetos:hover{
-    border: 1px solid rgba(59,209,202,1);
-    box-shadow: 0 0.5rem 0.7rem 0 rgba(59,209,202,1);
-    backdrop-filter: blur( 1em);
-    -webkit-backdrop-filter: blur( 1em );
-    transition: 1s;
-    backdrop-filter:none;
-    -webkit-backdrop-filter: none;
-}
 #projetos .box-projetos h2{
     margin-top: 0.5em;
     height: 2em;
@@ -525,16 +516,18 @@ nav.social-media ul li a .fa-solid:hover{
     margin-top: .6em;
     color:#939393;
 }
-#projetos .box-projetos .descricao-projetos a .fa-brands{
-    font-family: "FontAwesome";
-    font-style: normal;
-    font-size: 2em;
-    color: rgb(140, 140, 140);
-}
 #projetos .box-projetos .descricao-projetos a{
     position: absolute;
     bottom: 0.5em;
     right: 0.5em;
+    transition: .3s;
+    text-decoration: none;
+}
+#projetos .box-projetos .descricao-projetos a .fa-brands{
+    font-family: "FontAwesome";
+    font-style: normal;
+    font-size: 2em;
+    color: rgb(140, 140, 140); 
     transition: .3s;
 }
 #projetos .box-projetos .descricao-projetos a .fa-brands:hover{
