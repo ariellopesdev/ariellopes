@@ -240,7 +240,7 @@ nav.social-media ul li a .fa-solid:hover{
 }
 #introducao{
     margin-bottom: 3em;
-    height: 38em;
+    height: 34em;
     display: flex;
     flex-direction: row;
     justify-content:center;
@@ -314,7 +314,7 @@ nav.social-media ul li a .fa-solid:hover{
     justify-content:center;
 }
 .textoPerfil h1, .textoPerfil h2, .textoPerfil h3, .textoPerfil h4{
-    margin-left: 60px;
+    padding-left: 80px;
     white-space: nowrap;
     overflow: hidden;
     width: 0;
@@ -349,38 +349,26 @@ nav.social-media ul li a .fa-solid:hover{
 #sobre{
     padding-top: 3em;
     margin-bottom: 3em;
-    height: 100vh;
-    /* background-color: green; */
-}
-#sobre .center{
-    height: 100%;
-}
-#sobre h1{
-    text-align: center;
-    font-size: 40px;
-    margin-bottom: 36px;
 }
 #sobre .foto{
-    /* background-color: aquamarine; */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 #sobre img{
-    width: 380px;
-    height: 380px;
+    width: 25em;
+    height: 25em;
     border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
 }
 #sobre .apresentacao{
-    /* background-color: yellow; */
-    padding: 0 6% !important;
+    height: 25em;
+    padding: 0 5% !important;
 }
 #sobre p{
-    /* background-color: #0e76a8; */
-    height: 380px;
+    height: 100%;
     width: 100%;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 1.2em;
     display: flex;
     align-items: center;
     text-align: justify;
@@ -388,8 +376,10 @@ nav.social-media ul li a .fa-solid:hover{
 #especialidades{
     padding-top: 3em;
     margin-bottom: 3em;
-    /* background-color: brown; */
 }
+/* #especialidades .center{
+    background-color:cyan;
+} */
 #especialidades h1{
     text-align: center;
     font-size: 40px;
@@ -413,7 +403,7 @@ nav.social-media ul li a .fa-solid:hover{
     justify-content: center;
 }
 .container-skills .box-skills{
-    width: 220px;
+    width: 250px;
     margin: 10px 20px 20px;
     height: 300px;
     padding: 12px;
@@ -483,6 +473,9 @@ nav.social-media ul li a .fa-solid:hover{
     margin-bottom: 3em;
     /* background-color: yellow; */
 }
+/* #projetos .center{
+    background-color: green;
+} */
 #projetos h1{
     text-align: center;
     font-size: 40px;
@@ -781,11 +774,11 @@ footer p{
         font-size: 2em;
         margin-top: 0.5em;
         text-align: center;
-        margin-left: 0;
+        padding-left: 0;
     }
     .textoPerfil h2,.textoPerfil h3,.textoPerfil h4{
         text-align: center;
-        margin-left: 0;
+        padding-left: 0;
     }
     .textoPerfil h2{
         font-size: 1.3em;
@@ -906,9 +899,6 @@ footer p{
         color: rgba(59,209,202,1);
         transition: .3s;
     }
-    #sobre{
-        height: 140vh;
-    }
     #contato{
         height: 100%;
     }
@@ -923,7 +913,14 @@ footer p{
         margin: 0 auto;
     }
     #sobre .apresentacao{
+        height: auto;
         width: 100%;
+        margin-top: 3em;
+    }
+    #sobre p{
+        height: auto;
+        display: flex;
+        align-items: start;
     }
     #soft-skills h2,
     #hard-skills h2{
@@ -954,14 +951,32 @@ footer p{
         font-size: 2.3em;
     }
 }
-@media screen and (max-width: 500px) {
-    
+@media screen and (max-width: 650px) {
     #sobre img{
-        width: 350px;
-        height: 350px;
+        width: 20em;
+        height: 20em;
     }
     #sobre .apresentacao{
-        margin-top: 10px;
+        height:auto;
+    }
+}
+@media screen and (max-width: 360px){
+    .agrupar{
+        width:18em;
+        height: 18em;
+    }   
+    .loader h1{
+        top: 2.5em;
+        font-size: 2.7em;
+    }
+    .loader p{
+        left: 7.5rem;
+        top: 0.1rem;
+        font-size: 11em;
+    }
+    .loader svg{
+        top: 2em;
+        font-size: .7rem;
     }
 }
 
