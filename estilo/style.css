@@ -952,6 +952,9 @@ footer p{
     }
 }
 @media screen and (max-width: 650px) {
+    #introducao{
+        height: 100vh;
+    }
     #sobre img{
         width: 20em;
         height: 20em;
