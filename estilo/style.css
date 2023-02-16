@@ -844,6 +844,10 @@ footer p{
         display: block;
         font-size: 1.2rem;
         line-height: 3em;
+        transition: .3s;
+    }
+    nav.mobile li i{
+        margin: 0 1em;
     }
     nav.mobile li a {
         display: block;
@@ -852,6 +856,7 @@ footer p{
     }
     nav.mobile li:hover {
         background-color: rgba(59,209,202,1);
+        transition: .3s;
     }
     nav.mobile li a:hover{
         font-size: 1.3rem;
@@ -860,30 +865,46 @@ footer p{
         width: 100%;
         height: 100%;
     }
-    nav.mobile div#icon-mobile{
+    nav.mobile ul #icon-mobile{
+        font-weight: 700;
+        font-size: 0.8em;
+        text-transform: uppercase;
+        color: #fff;
+        text-decoration: none;
+        line-height: 2.5rem;
+        position: relative;
+        z-index: 1;
+        text-align: center;
         display: flex;
-        justify-content: space-around;
-        align-items: center;
-        height: 4em;
-        border-top: .3em solid #ff8c00;
+        justify-content:space-around;
+        align-items:center;
+        height: 5rem;
+        border-top: .5em solid #ff8c00;
     }
-    nav.mobile div a .fa-solid{
+    nav.mobile ul #icon-mobile a{
+        text-decoration: none;
+    }
+    nav.mobile ul #icon-mobile a .fa-brands{
         font-family: "FontAwesome";
         font-style: normal;
         font-size: 2em;
         color: #222;
+        transition: .3s;
     }
-    nav.mobile div a .fa-brands{
+    nav.mobile ul #icon-mobile a .fa-brands:hover{
+        color: rgba(59,209,202,1);
+        transition: .3s;
+    }
+    nav.mobile ul #icon-mobile a .fa-solid{
         font-family: "FontAwesome";
         font-style: normal;
         font-size: 2em;
         color: #222;
+        transition: .3s;
     }
-    nav.mobile div a .fa-solid:hover{
-        color:rgba(59,209,202,1);
-    }
-    nav.mobile div a .fa-brands:hover{
-        color:rgba(59,209,202,1);
+    nav.mobile ul #icon-mobile a .fa-solid:hover{
+        color: rgba(59,209,202,1);
+        transition: .3s;
     }
     #sobre{
         height: 140vh;
