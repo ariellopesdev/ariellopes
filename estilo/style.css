@@ -501,111 +501,125 @@ nav.social-media ul li a .fa-solid:hover{
     text-align: center;
 }
 .box-skills hr{
-    border: 0.5px solid #ff8c00;
+    border: 0.1rem solid #ff8c00;
 }
 .box-skills p{
-    margin-top: 20px;
-    font-size:13px;
+    margin-top: 1em;
+    font-size:1em;
     text-align: center;
     color: #ffffff;
 }
 #hard-skills .box-skills{
-    width: 220px;
-    margin: 10px 20px 20px;
-    height: 220px;
+    width: 10em;
+    margin: .5em 1em 1em;
+    height: 10em;
     background: #3b3b3b;
-    backdrop-filter: blur( 2px );
-    -webkit-backdrop-filter: blur( 2px );
-    border: 1px solid rgba(59,209,202,1);
+    backdrop-filter: blur( 2em );
+    -webkit-backdrop-filter: blur( 2em );
+    border: 0.1em solid rgba(59,209,202,1);
     transition: 1s;
     display: flex;
     flex-direction: column;
     justify-content:center;
     align-items: center;
 }
-.box-skills #resto{
-    font-size: 20px;
-    width: 90px;
-    height: 100px;
-}
-.box-skills #php, .box-skills #bootstrap{
-    font-size: 20px;
-    width: 110px;
-    height: 90px;
-}
-#contato{
-    padding-top: 3em;
-    margin-bottom: 3em;
-    /* background-color: orange; */
-} 
-#contato .center{
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#contato .dados{
-    width: 30em;
-    position: relative;
-    background: rgb(67, 67, 67);
-    box-shadow: 0 4px 16px 0 rgba(59,209,202,1);
-    backdrop-filter: blur( 1.5px );
-    -webkit-backdrop-filter: blur( 1.5px );
-    border: 1px solid rgba(59,209,202,1);
-}
-#contato .dados .dadosPessoais{
-    height: 80px;
-    padding-top: 11px;
-    padding-bottom: 11px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-#contato .dados .dadosPessoais h2{
-    text-align: center;
-    font-size: 19px;
-    font-weight: 400;
-    color: rgb(225, 225, 225);
-}
-#contato .dados .dadosPessoais p{
-    text-align: center;
-    font-size: 14px;
-    padding: 3px 0;
-    color: rgb(140, 140, 140);
-}
-#contato .dados .dadosPessoais a{
-    text-align: center;
-    font-size: 14px;
-    padding: 3px 0;
-    color: rgb(140, 140, 140);
-    text-decoration: none;
-}
-#contato .dados .dadosPessoais a:visited{
-    text-decoration: none;
-}
-#contato .dados .dadosPessoais a:hover{
-    text-decoration: underline;
+.box-skills img{
+    width: 4em;
+    height: auto;
 }
 footer{
     position: static; 
     bottom: 0; 
     width: 100%;
+    background-color: rgb(41, 41, 41);
+    height: 15em;
+}
+footer section#box-footer{
+    width: 100%;
+    height: 100%;
+    /* background-color:orange; */
+}
+footer section#box-footer div#logosimples{
+    /* background-color: red; */
+    width: 25%;
+    height: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(67, 67, 67);
+    justify-content:center;
+}
+footer section#box-footer div#logosimples img{
+    width: 10em;
+    height: 10em;
+    margin-top: 2em;
+}
+footer section#box-footer nav#desktop-footer{
+    /* background-color:blue; */
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+footer section#box-footer nav#desktop-footer a:nth-child(1){
+    margin-top: 2em;
+}
+footer section#box-footer nav#desktop-footer a{
+    margin-left: 2em;
+    text-decoration: none;
+    color: rgb(140, 140, 140);
+    font-size: 1.2em;
+    transition: .5s;
+}
+footer section#box-footer nav#desktop-footer a:hover{
+    color: rgba(59,209,202,1);
+    transition: .5s;
+}
+footer #contato{
+    width: 35%;
+    height: 100%;
+    /* display: flex; */
+}
+footer .dados{
+    margin-top: 2em;
+    width:100%;
+    /* background-color: brown; */
     height: 7em;
 }
+footer .dadosPessoais{
+    /* background-color:orange; */
+    text-decoration: none;
+    height: 3em;
+    width: 100%;
+    text-align: center;
+    font-size: 1em;
+    color: rgb(140, 140, 140);
+    line-height:3em;
+    transition: .5s;
+}
+footer .dadosPessoais:hover{
+    color: rgba(59,209,202,1);
+    transition: .5s;
+}
+footer .dadosPessoais a{
+    text-decoration: none;
+    color: rgb(140, 140, 140);
+    font-size: 1em;
+    transition: .5s;
+}
+footer .dadosPessoais a:hover{
+    color: rgba(59,209,202,1);
+    transition: .5s;
+}
 footer ul{
+    /* background-color: yellow; */
+    width: 100%;
     position: relative;
     display: flex;
-    top: 10px;
+    justify-content: center;
+    margin-top: 2em;
 }
 footer ul li{
     position: relative;
     list-style: none;
-    margin: 0 1rem;
+    margin: 0 2em;
     cursor: pointer;
 }
 footer ul li a{
@@ -669,10 +683,13 @@ footer ul li:hover a::before{
     height: 100%;
 }
 footer p{
-    margin-top: 2rem;
+    width: 100%;
+    height: 3em;
     text-align: center;
     font-size: 0.8rem;
     color: rgb(140, 140, 140);
+    background-color: rgb(16, 16, 16);
+    line-height:3em;
 }
 @keyframes animarBola{
     0% {
@@ -794,6 +811,12 @@ footer p{
     .textoPerfil h3,.textoPerfil h4{
         font-size: 0.9em;
     }
+    footer section#box-footer nav#desktop-footer{
+        width: 30%;
+    }
+    footer #contato{
+        width: 45%;
+    }
 }
 @media screen and (max-width: 900px) {
     #main-title-projetos::before{
@@ -907,12 +930,6 @@ footer p{
         color: rgba(59,209,202,1);
         transition: .3s;
     }
-    #contato{
-        height: 100%;
-    }
-    #contato .center{
-        align-items:start;
-    }
     #sobre h1{
         text-align: center;
     }
@@ -959,6 +976,32 @@ footer p{
         font-size: 2.3em;
     }
 }
+@media screen and (max-width: 750px) {
+    footer{
+        height: 25em;
+    }
+    footer section#box-footer div#logosimples{
+        height: 12em;
+        width: 50%;
+        align-items: center;
+        float: left;
+    }
+    footer section#box-footer div#logosimples img{
+        margin-top: 0;
+    }
+    footer section#box-footer nav#desktop-footer{
+        width: 50%;
+        float: right;
+        height: 12em;
+    }
+    footer #contato{
+        width: 100%;
+        height: 13em;
+    }
+    footer section#box-footer{
+        height: 100%;
+    }
+}
 @media screen and (max-width: 650px) {
     #introducao{
         height: 100vh;
@@ -988,6 +1031,12 @@ footer p{
     .loader svg{
         top: 2em;
         font-size: .7rem;
+    }
+    footer ul li{
+        margin: 0 1em;
+    }
+    footer section#box-footer nav#desktop-footer a{
+        margin-left: 1em;
     }
 }
 
