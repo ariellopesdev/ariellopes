@@ -36,7 +36,7 @@
                 <div></div>
             </div>
         </div>
-    </div>
+    </div><!--preloader-->
     <header>
         <div class="center">
             <nav class="desktop right">
@@ -179,10 +179,10 @@
                     <video width="320" height="240" controls="controls" autoplay="autoplay">
                         <source src="videos_projetos/projeto_portfolio.mp4" type="video/mp4">
                     </video>
-                    <div class="description-projects">
+                    <div class="description-projects" id="portf">
                         <h3>Tecnologias: Html, Css, Javascript, PHP, PHPmyadmin, MySql, Jquery</h3>
-                        <p>Projeto desenvolvido durante curso de desenvolvedor web, projeto completo conta com várias
-                            técnicas usando todas as Tecnologias acima citadas, auxiliando e muito em meu aprendizado.
+                        <p>Projeto desenvolvido durante curso de desenvolvedor web, projeto completo que conta com várias
+                            técnicas.
                         </p>
                         <a href="https://github.com/ariellopesdev/my-website" target="_blank"><i
                                 class="fa-brands fa-github"></i></a>
@@ -229,7 +229,7 @@
                 </div>
                 <!--box-projects-->
                 <div class="box-projects">
-                    <h2>Animação Redes Sociais</h2>
+                    <h2>Animação Media</h2>
                     <video width="320" height="240" controls="controls" autoplay="autoplay">
                         <source src="videos_projetos/animacao_redes_sociais.mp4" type="video/mp4">
                     </video>
@@ -325,7 +325,7 @@
                     </div>
                     <div class="box-skills">
                         <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
-                        <h3>Resolução de Problemas</h3>
+                        <h3>Resolução</h3>
                         <hr>
                         </hr>
                         <p>Análise bem feita e plano de ação bem construído são o necessário para resolução de
@@ -438,8 +438,25 @@
         <!--center-->
         <p>Todos os direitos reservados <i class="fa fa-copyright" aria-hidden="true"></i> ariellopesdev</p>
     </footer>
+    <script src="JS/smooth-scroll.js"></script>
     <script src="JS/jquery.js"></script>
     <script src="JS/scripts.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+        $("a").on('click', function(event) {
+            if (this.hash !== "") {
+            event.preventDefault();
+            var hash = this.hash;
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, 800, function(){
+                window.location.hash = hash;
+            });
+            }
+        });
+        });
+    </script>
 </body>
 
 </html>

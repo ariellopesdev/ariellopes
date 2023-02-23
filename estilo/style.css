@@ -29,10 +29,6 @@ body{
     padding: 0 2%;
     margin: 0 auto;
 }
-.w33 {
-    width: 33.3%;
-    padding: 0 10px;
-}
 .w50 {
     padding: 0 10%;
     width: 50%;
@@ -68,10 +64,10 @@ body{
 .balls > div{
     display: inline-block;
     background-color: #fff;
-    width: 25px;
-    height: 25px;
+    width: 1.5em;
+    height: 1.5em;
     border-radius:100%;
-    margin: 3px;
+    margin: 1em;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
     animation-name: animarBola;
@@ -233,7 +229,7 @@ nav.social-media ul li a .fa-solid:hover{
 }
 #introduction .center{
     width: 100%;
-    height: 450px;
+    height: 28em;
 }
 .logo{
     width: 50%;
@@ -242,7 +238,7 @@ nav.social-media ul li a .fa-solid:hover{
 }
 .agroup{
     position: absolute;
-    height: 320px;
+    height: 20em;
     width: 70%;
 }
 .loader{
@@ -451,37 +447,37 @@ nav.social-media ul li a .fa-solid:hover{
     justify-content: center;
 }
 .container-skills .box-skills{
-    width: 250px;
-    margin: 10px 20px 20px;
-    height: 300px;
-    padding: 12px;
+    width: 15em;
+    margin: .5em 1em 1em;
+    height: 20em;
+    padding: 1em;
     background: #3b3b3b;
-    backdrop-filter: blur( 2px );
-    -webkit-backdrop-filter: blur( 2px );
-    border: 1px solid rgba(59,209,202,1);
+    backdrop-filter: blur( 2em );
+    -webkit-backdrop-filter: blur( 2em );
+    border: 0.1em solid rgba(59,209,202,1);
     transition: 1s;
     border-radius: 0.5em;
 }
 .container-skills .box-skills:hover{
-    border: 1px solid rgba(59,209,202,1);
-    box-shadow: 0 4px 16px 0 rgba(59,209,202,1);
-    backdrop-filter: blur( 2px );
-    -webkit-backdrop-filter: blur( 2px );
+    border: 0.1em solid rgba(59,209,202,1);
+    box-shadow: 0 0.5rem 0.7rem 0 rgba(59,209,202,1);
+    backdrop-filter: blur( 2em );
+    -webkit-backdrop-filter: blur( 2em );
     transition: 1s;
     backdrop-filter:none;
     -webkit-backdrop-filter: none;
 }
 .box-skills i{
-    font-size: 60px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    font-size: 3.5em;
+    margin-top: .1em;
+    margin-bottom: .1em;
     width: 100%;
     text-align: center;
     color: rgba(59,209,202,1);
 }
 .box-skills h3{
-    font-size: 18px;
-    margin-bottom: 20px;
+    font-size: 1.2em;
+    margin-bottom: 1em;
     color: rgba(59,209,202,1);
     text-align: center;
 }
@@ -973,6 +969,11 @@ footer p{
         height:auto;
     }
 }
+@media screen and (max-width: 400px) {
+    .main-title {
+        font-size:2.5em;
+    }
+}
 @media screen and (max-width: 360px){
     .agroup{
         width:18em;
@@ -995,7 +996,10 @@ footer p{
         margin: 0 1em;
     }
     footer section#box-footer nav#desktop-footer a{
-        margin-left: 1em;
+        margin-left: 1.5em;
+        font-size: 1em;
+        font-weight: bold;
     }
 }
+
 
