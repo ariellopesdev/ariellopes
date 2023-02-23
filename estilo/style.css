@@ -65,7 +65,7 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.bolas > div{
+.balls > div{
     display: inline-block;
     background-color: #fff;
     width: 25px;
@@ -78,15 +78,15 @@ body{
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
-.bolas > div:nth-child(1){
+.balls > div:nth-child(1){
     animation-duration: 0.75s;
     animation-delay: 0;
 }
-.bolas > div:nth-child(2){
+.balls > div:nth-child(2){
     animation: 0.75s;
     animation-delay: 0.12s;
 }
-.bolas > div:nth-child(3){
+.balls > div:nth-child(3){
     animation-duration: 0.75s;
     animation-delay: 0.24s;
 }
@@ -94,27 +94,12 @@ body{
 /*Títulos*/
 .main-title {
     color: #fff;
-    margin: 0 0 65px 0;
-    font-size:40px;
+    margin-bottom: 1.5em;
+    font-size:3em;
     text-align: center;
 }
-.main-title::before{
-    content: ' ';
-    border-bottom: 2px solid rgba(59,209,202,1);;
-    position: absolute;
-    margin-top: 70px;
-}
-#main-title-projetos::before{
-    width: 10%;
-    left: 45%;
-}
-#main-title-especialidades::before{
-    width:15%;
-    left: 43%;
-}
-#main-title-sobre::before{
-    width: 5%;
-    left: 47.5%;
+.main-title > span{
+    border-bottom: 0.1rem solid rgba(59,209,202,1);
 }
 
 /*Header*/
@@ -238,7 +223,7 @@ nav.social-media ul li a .fa-solid:hover{
     color: rgba(59,209,202,1);
     transition: .3s;
 }
-#introducao{
+#introduction{
     margin-bottom: 3em;
     height: 34em;
     display: flex;
@@ -246,7 +231,7 @@ nav.social-media ul li a .fa-solid:hover{
     justify-content:center;
     align-items:center;
 }
-#introducao .center{
+#introduction .center{
     width: 100%;
     height: 450px;
 }
@@ -255,7 +240,7 @@ nav.social-media ul li a .fa-solid:hover{
     height: 100%;
     position: relative;
 }
-.agrupar{
+.agroup{
     position: absolute;
     height: 320px;
     width: 70%;
@@ -306,26 +291,26 @@ nav.social-media ul li a .fa-solid:hover{
     stroke-dashoffset: 75;
     animation: pathCircle var(--duration) cubic-bezier(0.785,0.135,0.15,0.86) infinite;
 }
-.textoPerfil{
+.profile-text{
     width: 50%;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content:center;
 }
-.textoPerfil h1, .textoPerfil h2, .textoPerfil h3, .textoPerfil h4{
+.profile-text h1, .profile-text h2, .profile-text h3, .profile-text h4{
     padding-left: 80px;
     white-space: nowrap;
     overflow: hidden;
     width: 0;
 }
-.textoPerfil h1{
+.profile-text h1{
     font-size: 3em;
     font-weight: 900;
     animation: type 2s steps(40, end);
     animation-fill-mode: forwards;
 }
-.textoPerfil h2{
+.profile-text h2{
     margin-top: 1.5em;
     font-size: 1.5em;
     font-weight: 900;
@@ -333,7 +318,7 @@ nav.social-media ul li a .fa-solid:hover{
     animation-fill-mode: forwards;
     animation-delay: 2s;
 }
-.textoPerfil h3, .textoPerfil h4{
+.profile-text h3, .profile-text h4{
     margin-top: 1em;
     font-size: 1.1em;
     font-weight: 600;
@@ -341,30 +326,30 @@ nav.social-media ul li a .fa-solid:hover{
     animation-delay: 4s;
     animation-fill-mode: forwards;
 }
-.textoPerfil h4{
+.profile-text h4{
     animation: type4 2s steps(40, end),blink .5s step-end infinite alternate;
     animation-delay: 6s;
     animation-fill-mode: forwards;
 }
-#sobre{
+#about{
     padding-top: 3em;
     margin-bottom: 3em;
 }
-#sobre .foto{
+#about .photo{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-#sobre img{
+#about img{
     width: 25em;
     height: 25em;
     border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
 }
-#sobre .apresentacao{
+#about .presentation{
     height: 25em;
     padding: 0 5% !important;
 }
-#sobre p{
+#about p{
     height: 100%;
     width: 100%;
     font-weight: 400;
@@ -373,17 +358,17 @@ nav.social-media ul li a .fa-solid:hover{
     align-items: center;
     text-align: justify;
 }
-#projetos{
+#projects{
     padding-top: 3em;
     margin-bottom: 3em;
 }
-#projetos .container-projetos{
+#projects .container-projects{
     padding-top: 1em;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-#projetos .box-projetos{
+#projects .box-projects{
     width: 20em;
     height: 28em;
     margin: 1.5em;
@@ -395,7 +380,7 @@ nav.social-media ul li a .fa-solid:hover{
     transition: 1s;
     border-radius: 0.5em;
 }
-#projetos .box-projetos h2{
+#projects .box-projects h2{
     margin-top: 0.5em;
     height: 2em;
     width: 100%;
@@ -403,52 +388,52 @@ nav.social-media ul li a .fa-solid:hover{
     line-height: 2em;
     color: rgba(59,209,202,1);
 }
-#projetos .box-projetos video{
+#projects .box-projects video{
     width: 99%;
     height: 12em;
     display: flex;
     margin: -0.5em auto .5em;
     border-bottom: 0.2em solid #ff8c00;
 }
-#projetos .box-projetos .descricao-projetos{
+#projects .box-projects .description-projects{
     height: 12.1em;
     width: 100%;
     padding: 0.6em;
 }
-#projetos .box-projetos .descricao-projetos h3{
+#projects .box-projects .description-projects h3{
     font-size: 1em;
 }
-#projetos .box-projetos .descricao-projetos p{
+#projects .box-projects .description-projects p{
     font-size: 0.8em;
     margin-top: .6em;
     color:#939393;
 }
-#projetos .box-projetos .descricao-projetos a{
+#projects .box-projects .description-projects a{
     position: absolute;
     bottom: 0.5em;
     right: 0.5em;
     transition: .3s;
     text-decoration: none;
 }
-#projetos .box-projetos .descricao-projetos a .fa-brands{
+#projects .box-projects .description-projects a .fa-brands{
     font-family: "FontAwesome";
     font-style: normal;
     font-size: 2em;
     color: rgb(140, 140, 140); 
     transition: .3s;
 }
-#projetos .box-projetos .descricao-projetos a .fa-brands:hover{
+#projects .box-projects .description-projects a .fa-brands:hover{
     color: rgba(59,209,202,1);
     transition: .3s;
 }
-#especialidades{
+#specialties{
     padding-top: 3em;
     margin-bottom: 3em;
 }
-/* #especialidades .center{
+/* #specialties .center{
     background-color:cyan;
 } */
-#especialidades h2{
+#specialties h2{
     font-size:1.8em;
     background-color: #ff8c00;
     width: 7em;
@@ -456,7 +441,7 @@ nav.social-media ul li a .fa-solid:hover{
     text-align: center;
     border-radius: 0.2em;
 }
-#especialidades #hard-skills h2{
+#specialties #hard-skills h2{
     margin-top: 1em;
 }
 .container-skills{
@@ -539,14 +524,14 @@ footer section#box-footer{
     height: 100%;
     /* background-color:orange; */
 }
-footer section#box-footer div#logosimples{
+footer section#box-footer div#logosimple{
     /* background-color: red; */
     width: 25%;
     height: 100%;
     display: flex;
     justify-content:center;
 }
-footer section#box-footer div#logosimples img{
+footer section#box-footer div#logosimple img{
     width: 10em;
     height: 10em;
     margin-top: 2em;
@@ -572,18 +557,18 @@ footer section#box-footer nav#desktop-footer a:hover{
     color: rgba(59,209,202,1);
     transition: .5s;
 }
-footer #contato{
+footer #contact{
     width: 35%;
     height: 100%;
     /* display: flex; */
 }
-footer .dados{
+footer .data{
     margin-top: 2em;
     width:100%;
     /* background-color: brown; */
     height: 7em;
 }
-footer .dadosPessoais{
+footer .personal-data{
     /* background-color:orange; */
     text-decoration: none;
     height: 3em;
@@ -594,17 +579,17 @@ footer .dadosPessoais{
     line-height:3em;
     transition: .5s;
 }
-footer .dadosPessoais:hover{
+footer .personal-data:hover{
     color: rgba(59,209,202,1);
     transition: .5s;
 }
-footer .dadosPessoais a{
+footer .personal-data a{
     text-decoration: none;
     color: rgb(140, 140, 140);
     font-size: 1em;
     transition: .5s;
 }
-footer .dadosPessoais a:hover{
+footer .personal-data a:hover{
     color: rgba(59,209,202,1);
     transition: .5s;
 }
@@ -631,13 +616,13 @@ footer ul li a .fa-brands{
     font-size: 3em;
     color: rgb(140, 140, 140);
 }
-.box-especialidades .fa-brands{
+.box-specialties .fa-brands{
     font-family: "FontAwesome";
     font-style: normal;
     font-size: 3em;
     color: #ccc;
 }
-.box-especialidades .fa-solid{
+.box-specialties .fa-solid{
     font-family: "FontAwesome";
     font-style: normal;
     font-size: 3em;
@@ -760,17 +745,17 @@ footer p{
     }
 }
 @media screen and (max-width: 1050px){
-    #introducao{
+    #introduction{
         height: 38em;
     }
-    #introducao .center{
+    #introduction .center{
         height: 100%;
     }
     .logo{
         width: 100%;
         height: 20em;
     }
-    .agrupar{
+    .agroup{
         width: 21.5em;
     }
     .loader h1{
@@ -786,7 +771,7 @@ footer p{
         top: 2em;
         font-size: .8em;
     }
-    .textoPerfil{
+    .profile-text{
         margin-top: 2rem;
         height: 13em;
         color: #fff;
@@ -795,42 +780,30 @@ footer p{
         flex-direction: column;
         align-items: center;
     }
-    .textoPerfil h1{
+    .profile-text h1{
         font-size: 2em;
         margin-top: 0.5em;
         text-align: center;
         padding-left: 0;
     }
-    .textoPerfil h2,.textoPerfil h3,.textoPerfil h4{
+    .profile-text h2,.profile-text h3,.profile-text h4{
         text-align: center;
         padding-left: 0;
     }
-    .textoPerfil h2{
+    .profile-text h2{
         font-size: 1.3em;
     }
-    .textoPerfil h3,.textoPerfil h4{
+    .profile-text h3,.profile-text h4{
         font-size: 0.9em;
     }
     footer section#box-footer nav#desktop-footer{
         width: 30%;
     }
-    footer #contato{
+    footer #contact{
         width: 45%;
     }
 }
 @media screen and (max-width: 900px) {
-    #main-title-projetos::before{
-        width: 120px;
-        left: 37.5%;
-    }
-    #main-title-especialidades::before{
-        width:200px;
-        left: 30%;
-    }
-    #main-title-sobre::before{
-        width: 80px;
-        left: 42%;
-    }
     nav.desktop {
         display: none;
     }
@@ -930,40 +903,26 @@ footer p{
         color: rgba(59,209,202,1);
         transition: .3s;
     }
-    #sobre h1{
+    #about h1{
         text-align: center;
     }
-    #sobre .foto{
+    #about .photo{
         width: 100%;
         margin: 0 auto;
     }
-    #sobre .apresentacao{
+    #about .presentation{
         height: auto;
         width: 100%;
         margin-top: 3em;
     }
-    #sobre p{
+    #about p{
         height: auto;
         display: flex;
         align-items: start;
     }
     #soft-skills h2,
     #hard-skills h2{
-        margin: 10px auto 20px auto;
-        text-align: center;
-    }
-    .container-skills .box-skills{
-        width: 200px;
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-    #hard-skills .box-skills{
-        width: 120px;
-        height: 120px;
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-    #projetos h1{
+        margin: .5em auto 1em auto;
         text-align: center;
     }
     footer ul li a .fa-brands{
@@ -980,13 +939,13 @@ footer p{
     footer{
         height: 25em;
     }
-    footer section#box-footer div#logosimples{
+    footer section#box-footer div#logosimple{
         height: 12em;
         width: 50%;
         align-items: center;
         float: left;
     }
-    footer section#box-footer div#logosimples img{
+    footer section#box-footer div#logosimple img{
         margin-top: 0;
     }
     footer section#box-footer nav#desktop-footer{
@@ -994,7 +953,7 @@ footer p{
         float: right;
         height: 12em;
     }
-    footer #contato{
+    footer #contact{
         width: 100%;
         height: 13em;
     }
@@ -1003,19 +962,19 @@ footer p{
     }
 }
 @media screen and (max-width: 650px) {
-    #introducao{
+    #introduction{
         height: 100vh;
     }
-    #sobre img{
+    #about img{
         width: 18em;
         height: 18em;
     }
-    #sobre .apresentacao{
+    #about .presentation{
         height:auto;
     }
 }
 @media screen and (max-width: 360px){
-    .agrupar{
+    .agroup{
         width:18em;
         height: 18em;
     }   

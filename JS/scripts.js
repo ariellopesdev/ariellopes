@@ -39,12 +39,23 @@ $(function () {
             listaMenu.slideToggle();
         }
     })
-    $('.nav a[href^="#"]').on('click', function(e) {
-        e.preventDefault();
-        var id = $(this).attr('href'),
-                targetOffset = $(id).offset().top;
-        $('html, body').animate({ 
-            scrollTop: targetOffset - 100
-        }, 500);
-    });
 })
+// //Scroll to id
+// const menuItems = document.querySelectorAll('.nav a[href^="0"]');
+// menuItems.forEach(item => {
+//     item.addEventListener('click', scrollToIdOnClick);
+//         })
+// function scrollToIdOnClick(event){
+//     event.preventDefault();
+//     const to = getScrollTopByHref(event.target);
+
+//     window.scroll({
+//         top: to - 80,
+//         behavior: "smooth",
+//     });
+// }
+// function getScrollTopByHref(element){
+//     const id = element.getAttribute('href');
+//     return document.querySelector(id).offsetTop;
+// }
+
